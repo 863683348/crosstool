@@ -8,7 +8,7 @@ import { ShieldCheck } from 'lucide-react';
 export default function HomePage() {
   const { t } = useT();
 
-  const groups: ToolMeta['group'][] = ['file', 'image', 'account', 'finance', 'listing'];
+  const groups: ToolMeta['group'][] = ['file', 'image', 'account', 'finance', 'listing', 'media', 'data', 'compliance', 'seo', 'productivity'];
   const grouped = groups
     .map((g) => ({ g, items: TOOLS.filter((x) => x.group === g) }))
     .filter((x) => x.items.length > 0);
