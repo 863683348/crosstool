@@ -170,3 +170,21 @@ export const GROUP_LABEL_KEY: Record<ToolMeta['group'], string> = {
   seo: 'homeGroupSeo',
   productivity: 'homeGroupProductivity',
 };
+
+// 首页「热门工具」置顶列表（均为已实现、卖家最高频的工具）
+export const HOT_SLUGS: string[] = [
+  'pdf-merge',
+  'pdf-compress',
+  'pdf-split',
+  'image-compress',
+  'image-remove-bg',
+  'image-convert',
+  'image-resize',
+  'base64',
+  'vat-calculator',
+  'profit-calculator',
+  'currency-converter',
+  'char-counter',
+  'title-localizer',
+  'jwt-decoder',
+];

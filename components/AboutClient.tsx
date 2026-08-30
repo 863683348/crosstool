@@ -26,8 +26,8 @@ export default function AboutClient() {
         </h2>
         <p className="text-sm text-muted">
           {t('aboutContactBody')}{' '}
-          <a href="mailto:contact@crosstool.online" className="text-primary underline">
-            contact@crosstool.online
+          <a href="mailto:ahmedlzany423@gmail.com" className="text-primary underline">
+            ahmedlzany423@gmail.com
           </a>
         </p>
       </section>

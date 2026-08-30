@@ -5,7 +5,7 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 type Dict = Record<string, string>;
 type Lang = 'zh' | 'en';
 
-const ZH: Dict = {
+export const ZH: Dict = {
   brand: 'CrossTool',
   tagline: '跨境卖家本地隐私工具箱',
   privacyBadge: '🔒 全程本地处理 · 文件不上传',
@@ -16,6 +16,12 @@ const ZH: Dict = {
   // 首页
   homeSub: '为 Amazon · TikTok Shop · Shopify 卖家打造。所有工具在你的浏览器本地运行，文件永不离开设备。',
   homeAllTools: '全部工具',
+  homeTotal: '共 {n} 个本地工具 · 100% 浏览器内处理，零上传',
+  homeSearchPh: '搜索工具（支持中英文）…',
+  homeHot: '热门工具',
+  homeRecent: '最近使用',
+  homeNoRecent: '还没有使用记录 —— 打开一个工具试试',
+  homeNoResult: '没有找到匹配的工具，换个关键词试试',
   homeGroupFile: '文件 / PDF',
   homeGroupImage: '图片',
   homeGroupAccount: '账号安全',
@@ -466,7 +472,7 @@ const ZH: Dict = {
   coffeeAlipay: '支付宝',
 };
 
-const EN: Dict = {
+export const EN: Dict = {
   brand: 'CrossTool',
   tagline: 'Local & private toolbox for cross-border sellers',
   privacyBadge: '🔒 Processed locally · never uploaded',
@@ -477,6 +483,12 @@ const EN: Dict = {
   homeSub:
     'Built for Amazon · TikTok Shop · Shopify sellers. Every tool runs in your browser — files never leave your device.',
   homeAllTools: 'All tools',
+  homeTotal: '{n} local tools · 100% in-browser, zero upload',
+  homeSearchPh: 'Search tools (EN / 中文)…',
+  homeHot: 'Popular tools',
+  homeRecent: 'Recently used',
+  homeNoRecent: 'No usage yet — open a tool to get started',
+  homeNoResult: 'No matching tools — try another keyword',
   homeGroupFile: 'File / PDF',
   homeGroupImage: 'Image',
   homeGroupAccount: 'Account security',
