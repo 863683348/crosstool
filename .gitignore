@@ -1,0 +1,23 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+
+# 本地构建/调试临时产物（不入库）
+BUILD_RESULT.txt
+TYPECHECK.txt
+BUILD_*.txt
+BUILD_FINAL*.txt
+TYPECHECK*.txt
+build-runner.mjs
+run.mjs
+_*.log
+_*.out
+_*.err
+_*.txt
+_gitcheck.log

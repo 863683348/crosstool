@@ -1,0 +1,31 @@
+{
+  "name": "crosstool",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CrossTool — 跨境卖家本地隐私工具站（纯前端·零上传）。MVP 复用 PDFMergeNext 的 pdf-lib 引擎与 image-compressor 的纯前端压缩逻辑。",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "lucide-react": "^0.439.0",
+    "next": "^15.5.20",
+    "pdf-lib": "1.17.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^20.14.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.19",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}

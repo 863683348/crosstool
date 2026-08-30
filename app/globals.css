@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #4f46e5;
+  --primary-soft: #eef2ff;
+  --primary-text: #ffffff;
+  --ok: #16a34a;
+  --warn: #dc2626;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.05);
+  --radius: 14px;
+}
+
+[data-theme='dark'] {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --text: #e7e9ee;
+  --muted: #9aa3b2;
+  --border: #2a2f3a;
+  --primary: #818cf8;
+  --primary-soft: #1e2230;
+  --primary-text: #0f1115;
+  --ok: #4ade80;
+  --warn: #f87171;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+/* 隐藏滚动条但保留滚动（拖拽列表） */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 移动端：控件字号 ≥16px 防止 iOS 聚焦缩放 */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
