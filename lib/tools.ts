@@ -44,28 +44,28 @@ export const TOOLS: ToolMeta[] = [
   // soon: true = 已纳入规划/注册表，页面待实现（卡片不跳转、不进 sitemap，避免死链）
 
   // F 组 · 编码 / 标识（→ account）
-  { slug: 'qr-code', group: 'account', titleKey: 'qrTitle', descKey: 'qrDesc', soon: true },
-  { slug: 'url-codec', group: 'account', titleKey: 'urlCodecTitle', descKey: 'urlCodecDesc', soon: true },
-  { slug: 'html-entity', group: 'account', titleKey: 'htmlEntityTitle', descKey: 'htmlEntityDesc', soon: true },
-  { slug: 'timestamp-convert', group: 'account', titleKey: 'tsTitle', descKey: 'tsDesc', soon: true },
-  { slug: 'hash-generator', group: 'account', titleKey: 'hashTitle', descKey: 'hashDesc', soon: true },
-  { slug: 'barcode-generator', group: 'account', titleKey: 'barcodeTitle', descKey: 'barcodeDesc', soon: true },
+  { slug: 'qr-code', group: 'account', titleKey: 'qrTitle', descKey: 'qrDesc' },
+  { slug: 'url-codec', group: 'account', titleKey: 'urlCodecTitle', descKey: 'urlCodecDesc' },
+  { slug: 'html-entity', group: 'account', titleKey: 'htmlEntityTitle', descKey: 'htmlEntityDesc' },
+  { slug: 'timestamp-convert', group: 'account', titleKey: 'tsTitle', descKey: 'tsDesc' },
+  { slug: 'hash-generator', group: 'account', titleKey: 'hashTitle', descKey: 'hashDesc' },
+  { slug: 'barcode-generator', group: 'account', titleKey: 'barcodeTitle', descKey: 'barcodeDesc' },
 
   // G 组 · 图片进阶（→ image）
-  { slug: 'exif-cleaner', group: 'image', titleKey: 'exifTitle', descKey: 'exifDesc', soon: true },
-  { slug: 'image-batch-rename', group: 'image', titleKey: 'imgRenameTitle', descKey: 'imgRenameDesc', soon: true },
-  { slug: 'image-size-report', group: 'image', titleKey: 'imgSizeTitle', descKey: 'imgSizeDesc', soon: true },
-  { slug: 'image-rounded-border', group: 'image', titleKey: 'imgBorderTitle', descKey: 'imgBorderDesc', soon: true },
+  { slug: 'exif-cleaner', group: 'image', titleKey: 'exifTitle', descKey: 'exifDesc' },
+  { slug: 'image-batch-rename', group: 'image', titleKey: 'imgRenameTitle', descKey: 'imgRenameDesc' },
+  { slug: 'image-size-report', group: 'image', titleKey: 'imgSizeTitle', descKey: 'imgSizeDesc' },
+  { slug: 'image-rounded-border', group: 'image', titleKey: 'imgBorderTitle', descKey: 'imgBorderDesc' },
 
   // H 组 · 跨境财务进阶（→ finance）
-  { slug: 'duty-estimator', group: 'finance', titleKey: 'dutyTitle', descKey: 'dutyDesc', soon: true },
-  { slug: 'return-cost-calculator', group: 'finance', titleKey: 'returnCostTitle', descKey: 'returnCostDesc', soon: true },
-  { slug: 'multi-store-profit', group: 'finance', titleKey: 'multiProfitTitle', descKey: 'multiProfitDesc', soon: true },
+  { slug: 'duty-estimator', group: 'finance', titleKey: 'dutyTitle', descKey: 'dutyDesc' },
+  { slug: 'return-cost-calculator', group: 'finance', titleKey: 'returnCostTitle', descKey: 'returnCostDesc' },
+  { slug: 'multi-store-profit', group: 'finance', titleKey: 'multiProfitTitle', descKey: 'multiProfitDesc' },
 
   // I 组 · Listing 进阶（→ listing）
-  { slug: 'title-ab-test', group: 'listing', titleKey: 'titleAbTitle', descKey: 'titleAbDesc', soon: true },
-  { slug: 'bullet-generator', group: 'listing', titleKey: 'bulletGenTitle', descKey: 'bulletGenDesc', soon: true },
-  { slug: 'sensitive-word-check', group: 'listing', titleKey: 'sensitiveWordTitle', descKey: 'sensitiveWordDesc', soon: true },
+  { slug: 'title-ab-test', group: 'listing', titleKey: 'titleAbTitle', descKey: 'titleAbDesc' },
+  { slug: 'bullet-generator', group: 'listing', titleKey: 'bulletGenTitle', descKey: 'bulletGenDesc' },
+  { slug: 'sensitive-word-check', group: 'listing', titleKey: 'sensitiveWordTitle', descKey: 'sensitiveWordDesc' },
 
   // —— v3.0 提案（视频与多媒体，media）· 12 个本地隐私工具 ——
   { slug: 'video-compress', group: 'media', titleKey: 'videoCompressTitle', descKey: 'videoCompressDesc', soon: true },
