@@ -1,0 +1,57 @@
+name: Daily Content (crosstool 100-day pipeline)
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # UTC 18:00 = 北京 02:00
+  workflow_dispatch:
+    inputs:
+      day: { description: "指定日历 day（留空=自动找下一个）", required: false }
+      dry_run: { description: "只校验不生成", type: boolean, default: false }
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { token: "${{ secrets.GITHUB_TOKEN }}", fetch-depth: 0 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+
+      - name: Install deps (for tsc validation)
+        run: npm install --no-audit --no-fund
+
+      - name: Layer 1 - generate daily post
+        id: gen
+        env:
+          DASHSCOPE_API_KEY: "${{ secrets.DASHSCOPE_API_KEY }}"
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.day }}" ]; then ARGS="$ARGS --day ${{ inputs.day }}"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          node scripts/fetch-content-daily.mjs $ARGS
+
+      - name: Layer 2 - push via Git Data API
+        if: steps.gen.outputs.pushed == '1'
+        env:
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        run: |
+          node scripts/sync-github.mjs \
+            --owner "${{ github.repository_owner }}" \
+            --repo "${{ github.event.repository.name }}" \
+            --branch main \
+            --token "$GH_TOKEN" \
+            --message "auto: daily blog post $(date -u +%Y-%m-%d)"
+
+      - name: Layer 3 - IndexNow submit
+        if: steps.gen.outputs.pushed == '1'
+        run: |
+          node scripts/indexnow-submit.mjs \
+            --host crosstool.online \
+            --key "${{ secrets.INDEXNOW_KEY }}" \
+            --urls "${{ steps.gen.outputs.new_url }}" \
+            --quiet
