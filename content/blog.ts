@@ -1,5 +1,8 @@
 // 数据驱动博客层（crosstool 百日 SEO 内容计划）。
-// 由 scripts/fetch-content-daily.mjs（GitHub Actions）每日追加；下方为种子帖。
+// 结构：本文件保留「种子帖」（手工维护）+ 合并 content/blog.daily.json（每日流水线追加）。
+// 每日发布：scripts/fetch-content-daily.mjs 只向 blog.daily.json 追加，不碰本文件，杜绝格式破坏。
+export type BlogType = 'tutorial' | 'review' | 'compare' | 'listicle';
+
 export interface RelatedTool {
   slug: string;
   title: string;
@@ -9,17 +12,19 @@ export interface BlogPost {
   slug: string;
   title: string;
   date: string; // YYYY-MM-DD
+  type: BlogType; // tutorial=工具使用 / review=实测评测 / compare=方案对比 / listicle=清单合集
   category: string;
   excerpt: string;
   body: string[]; // 段落数组
   relatedTools: RelatedTool[];
 }
 
-export const blogPosts: BlogPost[] = [
+const seedPosts: BlogPost[] = [
   {
     slug: 'amazon-product-video-compress-guide',
     title: '亚马逊商品视频压缩实战：体积减半也不损画质',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '视频营销',
     excerpt:
       '商品短视频上传常受体积限制。用本地工具在浏览器内压缩，文件不上传，既过平台限制又保住选品隐私。',
@@ -38,6 +43,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'merge-pdf-customs-invoice',
     title: '报关单与发票 PDF 合并：跨境卖家一站式整理',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '文档处理',
     excerpt: '把报关单、发票、合同多份 PDF 按顺序合并成一册，本地完成，文件不上传。',
     body: [
@@ -55,6 +61,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'remove-bg-product-photo',
     title: '产品图去背景：本地工具 10 秒出透明 PNG',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '图片优化',
     excerpt: '一键把产品图去背景成透明 PNG，模型在浏览器本地跑，零上传，适合主图与白底图。',
     body: [
@@ -72,6 +79,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'vat-calculator-cross-border',
     title: '欧盟 VAT 计算器怎么用：含/不含税一键算',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '跨境财务',
     excerpt: '快速算含/不含税价与 VAT 金额，覆盖欧盟主要税率，本地完成不上传。',
     body: [
@@ -89,6 +97,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'amazon-listing-title-optimizer',
     title: 'Listing 标题优化：本地词库提词 + 密度自检',
     date: '2026-09-03',
+    type: 'tutorial',
     category: 'Listing 优化',
     excerpt: '用内置词库给标题同义/本地化表达，并对照长度上限做密度自检，零上传。',
     body: [
@@ -107,6 +116,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'extract-audio-from-live',
     title: '直播回放提取音频：做播客与字幕底稿',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '音视频',
     excerpt: '从直播/口播视频抽取音轨为 MP3，做播客素材或字幕底稿，本地处理不上传。',
     body: [
@@ -123,6 +133,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'images-to-pdf-catalog',
     title: '产品图批量转 PDF：发给买家的目录册',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '文档处理',
     excerpt: '把多张产品图、说明书页合成一本 PDF，便于发给买家、归档或报关随附，零上传。',
     body: [
@@ -136,6 +147,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'jwt-decoder-shop-api',
     title: '店铺 API Token 解析：JWT 解码看过期时间',
     date: '2026-09-03',
+    type: 'tutorial',
     category: '账号安全',
     excerpt: '解析店铺 API Token 的 Header/Payload，高亮过期时间，本地完成不上传。',
     body: [
@@ -149,6 +161,11 @@ export const blogPosts: BlogPost[] = [
     ],
   },
 ];
+
+import dailyPosts from './blog.daily.json';
+
+// 种子帖 + 日更池合并；每日流水线只写 blog.daily.json
+export const blogPosts: BlogPost[] = [...seedPosts, ...(dailyPosts as BlogPost[])];
 
 export function getPost(slug: string): BlogPost | undefined {
   return blogPosts.find((p) => p.slug === slug);

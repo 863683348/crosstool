@@ -1,10 +1,12 @@
 'use client';
 
 import { useMemo, useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useT, ZH, EN } from '@/lib/i18n';
 import { TOOLS, GROUP_LABEL_KEY, HOT_SLUGS, type ToolMeta } from '@/lib/tools';
 import ToolCard from '@/components/ToolCard';
-import { ShieldCheck, Search, Flame, Clock, PackageOpen } from 'lucide-react';
+import { blogPosts } from '@/content/blog';
+import { ShieldCheck, Search, Flame, Clock, PackageOpen, BookOpen } from 'lucide-react';
 
 const GROUPS: ToolMeta['group'][] = ['file', 'image', 'account', 'finance', 'listing', 'media', 'data', 'compliance', 'seo', 'productivity'];
 const RECENT_KEY = 'ct_recent';
@@ -124,6 +126,38 @@ export default function HomePage() {
         <p className="rounded-card border border-border bg-panel p-8 text-center text-sm text-muted">
           {t('homeNoResult')}
         </p>
+      )}
+
+      {/* 博客入口卡（最新 3 篇） */}
+      {!searching && (
+        <section className="mb-8">
+          <h3 className="mb-3 flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wide text-muted">
+            <BookOpen size={15} className="text-primary" /> {t('homeBlog')}
+            <Link href="/blog" className="ml-auto text-xs font-semibold text-primary hover:underline">
+              {t('homeBlogMore')} →
+            </Link>
+          </h3>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {blogPosts
+              .slice()
+              .sort((a, b) => (a.date < b.date ? 1 : -1))
+              .slice(0, 3)
+              .map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}`}
+                  className="group block rounded-card border border-border bg-panel p-5 shadow-card transition hover:border-primary"
+                >
+                  <div className="flex items-center gap-2 text-xs text-muted">
+                    <span className="rounded-full bg-panel px-2 py-0.5 font-semibold text-primary">{p.category}</span>
+                    <time dateTime={p.date}>{p.date}</time>
+                  </div>
+                  <h4 className="mt-2 text-sm font-bold leading-snug transition group-hover:text-primary">{p.title}</h4>
+                  <p className="mt-1 line-clamp-2 text-xs text-muted">{p.excerpt}</p>
+                </Link>
+              ))}
+          </div>
+        </section>
       )}
 
       {/* 分类（标题带个数） */}

@@ -1,0 +1,1506 @@
+[
+  {
+    "day": 1,
+    "slug": "amazon-main-video-size-limit",
+    "title": "亚马逊主图视频体积超限？三档画质压到合规区间",
+    "category": "视频营销",
+    "keywords": [
+      "亚马逊主图视频",
+      "视频压缩",
+      "视频体积"
+    ],
+    "tools": [
+      "video-compress",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 2,
+    "slug": "tiktok-shop-video-format-guide",
+    "title": "TikTok Shop 视频格式要求：一次转换全平台兼容",
+    "category": "视频营销",
+    "keywords": [
+      "TikTok Shop",
+      "视频格式转换",
+      "mp4"
+    ],
+    "tools": [
+      "video-convert",
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 3,
+    "slug": "product-video-to-gif-detail-page",
+    "title": "详情页动图怎么做：商品视频截 3 秒转 GIF",
+    "category": "视频营销",
+    "keywords": [
+      "视频转GIF",
+      "详情页动图"
+    ],
+    "tools": [
+      "video-to-gif",
+      "video-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 4,
+    "slug": "video-trim-keep-first-3-seconds",
+    "title": "只留开头 3 秒：砍掉商品视频冗余头尾",
+    "category": "视频营销",
+    "keywords": [
+      "视频裁剪",
+      "视频截取"
+    ],
+    "tools": [
+      "video-trim",
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 5,
+    "slug": "merge-unboxing-review-clips",
+    "title": "开箱测评多段素材合并成一支完整视频",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "开箱测评"
+    ],
+    "tools": [
+      "video-merge",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 6,
+    "slug": "video-frame-extract-product-photos",
+    "title": "不想拍图？从商品视频里直接抽产品图",
+    "category": "视频营销",
+    "keywords": [
+      "视频抽帧",
+      "产品图"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 7,
+    "slug": "video-resize-landscape-to-vertical",
+    "title": "横屏素材转 9:16 竖屏：短视频平台适配",
+    "category": "视频营销",
+    "keywords": [
+      "视频分辨率",
+      "竖屏视频"
+    ],
+    "tools": [
+      "video-resize",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 8,
+    "slug": "images-to-video-slideshow",
+    "title": "图片轮播转视频：零拍摄成本做商品展示片",
+    "category": "视频营销",
+    "keywords": [
+      "图片转视频",
+      "轮播视频"
+    ],
+    "tools": [
+      "images-to-video",
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 9,
+    "slug": "compress-4k-footage-to-720p",
+    "title": "4K 原片压到 720p 为什么还能很清晰",
+    "category": "视频营销",
+    "keywords": [
+      "4K压缩",
+      "720p"
+    ],
+    "tools": [
+      "video-compress",
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 10,
+    "slug": "mov-to-mp4-conversion",
+    "title": "相机拍的 MOV 平台不认？转 MP4 一条龙",
+    "category": "视频营销",
+    "keywords": [
+      "MOV转MP4",
+      "视频格式"
+    ],
+    "tools": [
+      "video-convert",
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 11,
+    "slug": "amazon-main-image-white-background",
+    "title": "主图白底要求：本地抠图出合规主图",
+    "category": "图片优化",
+    "keywords": [
+      "白底图",
+      "抠图",
+      "亚马逊主图"
+    ],
+    "tools": [
+      "image-remove-bg",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 12,
+    "slug": "batch-compress-100-product-photos",
+    "title": "100 张产品图批量压缩：上架前必做瘦身",
+    "category": "图片优化",
+    "keywords": [
+      "图片压缩",
+      "批量处理"
+    ],
+    "tools": [
+      "image-compress",
+      "image-size-report"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 13,
+    "slug": "heic-to-jpg-for-listing",
+    "title": "iPhone 拍的 HEIC 平台上传失败？转 JPG 就好",
+    "category": "图片优化",
+    "keywords": [
+      "HEIC转JPG",
+      "图片格式"
+    ],
+    "tools": [
+      "image-convert",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 14,
+    "slug": "image-resize-platform-requirements",
+    "title": "各平台图片尺寸要求对照：一套图适配全渠道",
+    "category": "图片优化",
+    "keywords": [
+      "图片尺寸",
+      "图片缩放"
+    ],
+    "tools": [
+      "image-resize",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 15,
+    "slug": "blind-watermark-anti-theft",
+    "title": "产品图被盗用？盲水印让盗图者无所遁形",
+    "category": "图片优化",
+    "keywords": [
+      "盲水印",
+      "防盗图"
+    ],
+    "tools": [
+      "image-blind-watermark",
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 16,
+    "slug": "exif-clean-before-publish",
+    "title": "发图前清 EXIF：别把 GPS 和设备信息一起发出去",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF",
+      "图片隐私"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 17,
+    "slug": "image-batch-rename-by-sku",
+    "title": "产品图按 SKU 批量改名：仓库与运营都省心",
+    "category": "图片优化",
+    "keywords": [
+      "批量改名",
+      "SKU"
+    ],
+    "tools": [
+      "image-batch-rename",
+      "image-size-report"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 18,
+    "slug": "image-size-report-listing-audit",
+    "title": "Listing 图片体积体检：找出拖慢页面的元凶",
+    "category": "图片优化",
+    "keywords": [
+      "图片体积",
+      "页面速度"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 19,
+    "slug": "rounded-border-detail-images",
+    "title": "详情图加圆角边框：不用设计软件也能提升质感",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "详情页设计"
+    ],
+    "tools": [
+      "image-rounded-border",
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 20,
+    "slug": "webp-vs-jpg-product-images",
+    "title": "产品图存 WebP 还是 JPG：体积与兼容怎么权衡",
+    "category": "图片优化",
+    "keywords": [
+      "WebP",
+      "JPG",
+      "图片格式"
+    ],
+    "tools": [
+      "image-convert",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 21,
+    "slug": "merge-contract-invoice-packing-pdf",
+    "title": "合同+发票+装箱单合并成一册 PDF 的标准流程",
+    "category": "文档处理",
+    "keywords": [
+      "PDF合并",
+      "报关文件"
+    ],
+    "tools": [
+      "pdf-merge",
+      "pdf-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 22,
+    "slug": "pdf-compress-email-attachment",
+    "title": "PDF 太大发不了邮件？两步压到附件限制内",
+    "category": "文档处理",
+    "keywords": [
+      "PDF压缩",
+      "邮件附件"
+    ],
+    "tools": [
+      "pdf-compress",
+      "pdf-split"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 23,
+    "slug": "pdf-split-extract-invoice-pages",
+    "title": "从大 PDF 里只拆出发票页给财务",
+    "category": "文档处理",
+    "keywords": [
+      "PDF拆分",
+      "发票"
+    ],
+    "tools": [
+      "pdf-split",
+      "pdf-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 24,
+    "slug": "pdf-to-images-for-proofing",
+    "title": "PDF 转图片：把设计稿变成聊天里能直接看的对比图",
+    "category": "文档处理",
+    "keywords": [
+      "PDF转图片",
+      "设计稿确认"
+    ],
+    "tools": [
+      "pdf-to-images",
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 25,
+    "slug": "multi-platform-product-catalog-pdf",
+    "title": "给线下客户做产品目录册：图片一键合成 PDF",
+    "category": "文档处理",
+    "keywords": [
+      "产品目录",
+      "图片转PDF"
+    ],
+    "tools": [
+      "images-to-pdf",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 26,
+    "slug": "pdf-slim-before-customs",
+    "title": "报关文件瘦身： scanned 扫描件压缩不损可读性",
+    "category": "文档处理",
+    "keywords": [
+      "报关",
+      "PDF压缩"
+    ],
+    "tools": [
+      "pdf-compress",
+      "pdf-to-images"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 27,
+    "slug": "pdf-split-sample-chapter",
+    "title": "产品手册只发样章：PDF 拆分保住核心资料",
+    "category": "文档处理",
+    "keywords": [
+      "PDF拆分",
+      "产品手册"
+    ],
+    "tools": [
+      "pdf-split",
+      "pdf-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 28,
+    "slug": "merge-product-manuals-pdf",
+    "title": "多语言说明书合并为一份 PDF 随货发",
+    "category": "文档处理",
+    "keywords": [
+      "说明书",
+      "PDF合并"
+    ],
+    "tools": [
+      "pdf-merge",
+      "images-to-pdf"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 29,
+    "slug": "pdf-to-image-then-watermark",
+    "title": "报价单 PDF 转图片再加水印：防转发防冒用",
+    "category": "文档处理",
+    "keywords": [
+      "报价单",
+      "水印"
+    ],
+    "tools": [
+      "pdf-to-images",
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 30,
+    "slug": "screenshots-to-pdf-expense-report",
+    "title": "报销截图转 PDF：聊天记录一键归档",
+    "category": "文档处理",
+    "keywords": [
+      "截图转PDF",
+      "报销"
+    ],
+    "tools": [
+      "images-to-pdf",
+      "pdf-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 31,
+    "slug": "eu-vat-price-calculation",
+    "title": "欧盟含税价怎么定：VAT 计算器双向换算",
+    "category": "跨境财务",
+    "keywords": [
+      "欧盟VAT",
+      "含税价"
+    ],
+    "tools": [
+      "vat-calculator",
+      "currency-converter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 32,
+    "slug": "fba-fee-estimate-before-sourcing",
+    "title": "拿货前先算 FBA 费用：别等上架才发现不赚钱",
+    "category": "跨境财务",
+    "keywords": [
+      "FBA费用",
+      "选品测算"
+    ],
+    "tools": [
+      "fba-fee-estimator",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 33,
+    "slug": "us-import-duty-estimate",
+    "title": "美国进口关税预估：HS 归类与税率自查",
+    "category": "跨境财务",
+    "keywords": [
+      "美国关税",
+      "关税计算"
+    ],
+    "tools": [
+      "duty-estimator",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 34,
+    "slug": "return-cost-hidden-loss",
+    "title": "一单退货到底亏多少：把隐藏成本算清楚",
+    "category": "跨境财务",
+    "keywords": [
+      "退货成本",
+      "利润"
+    ],
+    "tools": [
+      "return-cost-calculator",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 35,
+    "slug": "multi-store-profit-summary",
+    "title": "三个店铺的利润怎么汇总：多店利润表做法",
+    "category": "跨境财务",
+    "keywords": [
+      "多店铺",
+      "利润汇总"
+    ],
+    "tools": [
+      "multi-store-profit",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 36,
+    "slug": "currency-conversion-pricing-strategy",
+    "title": "多币种定价策略：汇率波动下怎么留利润",
+    "category": "跨境财务",
+    "keywords": [
+      "汇率",
+      "定价"
+    ],
+    "tools": [
+      "currency-converter",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 37,
+    "slug": "margin-check-before-ad-spend",
+    "title": "投广告前先算毛利：保本 ACOS 怎么来",
+    "category": "跨境财务",
+    "keywords": [
+      "毛利",
+      "ACOS"
+    ],
+    "tools": [
+      "profit-calculator",
+      "vat-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 38,
+    "slug": "uk-vat-after-brexit",
+    "title": "英国 VAT 单独算：脱欧后价税分离实操",
+    "category": "跨境财务",
+    "keywords": [
+      "英国VAT",
+      "价税分离"
+    ],
+    "tools": [
+      "vat-calculator",
+      "currency-converter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 39,
+    "slug": "fba-storage-fee-season-warning",
+    "title": "旺季仓储费翻倍前：先算清压货成本",
+    "category": "跨境财务",
+    "keywords": [
+      "仓储费",
+      "压货"
+    ],
+    "tools": [
+      "fba-fee-estimator",
+      "multi-store-profit"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 40,
+    "slug": "eu-ioss-low-value-parcel",
+    "title": "低值包裹 IOSS：小额订单的税怎么算",
+    "category": "跨境财务",
+    "keywords": [
+      "IOSS",
+      "低值包裹"
+    ],
+    "tools": [
+      "vat-calculator",
+      "duty-estimator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 41,
+    "slug": "title-localization-germany-market",
+    "title": "德国站标题本地化：直译机翻差在哪",
+    "category": "Listing优化",
+    "keywords": [
+      "标题本地化",
+      "德国站"
+    ],
+    "tools": [
+      "title-localizer",
+      "text-normalizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 42,
+    "slug": "keyword-density-title-analysis",
+    "title": "标题关键词堆砌了吗：密度分析自查法",
+    "category": "Listing优化",
+    "keywords": [
+      "关键词密度",
+      "标题分析"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "char-counter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 43,
+    "slug": "char-count-across-platforms",
+    "title": "各平台标题字数上限不同：一个工具全对齐",
+    "category": "Listing优化",
+    "keywords": [
+      "字数统计",
+      "标题长度"
+    ],
+    "tools": [
+      "char-counter",
+      "text-normalizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 44,
+    "slug": "five-bullet-points-generator",
+    "title": "五点描述写不出卖点：提纲生成再人工润色",
+    "category": "Listing优化",
+    "keywords": [
+      "五点描述",
+      "卖点"
+    ],
+    "tools": [
+      "bullet-generator",
+      "char-counter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 45,
+    "slug": "sensitive-word-check-before-listing",
+    "title": "上架前敏感词自查：违禁词导致下架太冤",
+    "category": "Listing优化",
+    "keywords": [
+      "敏感词",
+      "违禁词"
+    ],
+    "tools": [
+      "sensitive-word-check",
+      "text-normalizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 46,
+    "slug": "title-ab-test-method",
+    "title": "标题 A/B 测试不靠猜：留痕对比法",
+    "category": "Listing优化",
+    "keywords": [
+      "标题A/B",
+      "点击率"
+    ],
+    "tools": [
+      "title-ab-test",
+      "char-counter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 47,
+    "slug": "text-normalize-copy-paste",
+    "title": "复制来的文案带乱码？一键归一化再上架",
+    "category": "Listing优化",
+    "keywords": [
+      "文本归一化",
+      "乱码"
+    ],
+    "tools": [
+      "text-normalizer",
+      "char-counter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 48,
+    "slug": "competitor-title-word-analysis",
+    "title": "拆解 Best Seller 标题：竞品用词频率分析",
+    "category": "Listing优化",
+    "keywords": [
+      "竞品分析",
+      "关键词"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "title-localizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 49,
+    "slug": "sensitive-word-health-claims",
+    "title": "功效类目重灾区：医疗健康敏感词清单自查",
+    "category": "Listing优化",
+    "keywords": [
+      "功效词",
+      "合规"
+    ],
+    "tools": [
+      "sensitive-word-check",
+      "text-normalizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 50,
+    "slug": "benefit-first-bullet-writing",
+    "title": "五点描述先写利益再写参数：结构化写法",
+    "category": "Listing优化",
+    "keywords": [
+      "卖点结构",
+      "五点描述"
+    ],
+    "tools": [
+      "bullet-generator",
+      "keyword-analyzer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 51,
+    "slug": "jwt-decode-api-token-expiry",
+    "title": "API 调用突然 401？先解码 JWT 看过期时间",
+    "category": "账号安全",
+    "keywords": [
+      "JWT",
+      "API调试"
+    ],
+    "tools": [
+      "jwt-decoder",
+      "json-formatter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 52,
+    "slug": "store-account-password-policy",
+    "title": "店铺账号密码怎么设：生成器+不重复原则",
+    "category": "账号安全",
+    "keywords": [
+      "密码生成",
+      "账号安全"
+    ],
+    "tools": [
+      "password-generator",
+      "hash-generator"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 53,
+    "slug": "json-format-open-api-response",
+    "title": "开放平台返回的 JSON 一坨？格式化后再看",
+    "category": "账号安全",
+    "keywords": [
+      "JSON格式化",
+      "API调试"
+    ],
+    "tools": [
+      "json-formatter",
+      "json-validator"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 54,
+    "slug": "validate-product-feed-json",
+    "title": "商品 feed 上传前先校验 JSON：少跑一趟错误日志",
+    "category": "账号安全",
+    "keywords": [
+      "JSON校验",
+      "商品feed"
+    ],
+    "tools": [
+      "json-validator",
+      "json-formatter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 55,
+    "slug": "url-encode-tracking-links",
+    "title": "带参数跟踪链接失效？URL 编码问题排查",
+    "category": "账号安全",
+    "keywords": [
+      "URL编码",
+      "跟踪链接"
+    ],
+    "tools": [
+      "url-codec",
+      "qr-code"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 56,
+    "slug": "qr-code-on-packaging",
+    "title": "包装上印二维码：跳转售后页的正确姿势",
+    "category": "账号安全",
+    "keywords": [
+      "二维码",
+      "包装"
+    ],
+    "tools": [
+      "qr-code",
+      "barcode-generator"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 57,
+    "slug": "hash-check-download-integrity",
+    "title": "下载的固件/软件包被改过？哈希校验一分钟",
+    "category": "账号安全",
+    "keywords": [
+      "哈希",
+      "文件校验"
+    ],
+    "tools": [
+      "hash-generator",
+      "timestamp-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 58,
+    "slug": "timestamp-convert-order-log",
+    "title": "订单日志时间戳看不懂：Unix 时间转本地时间",
+    "category": "账号安全",
+    "keywords": [
+      "时间戳",
+      "订单日志"
+    ],
+    "tools": [
+      "timestamp-convert",
+      "json-formatter"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 59,
+    "slug": "fnsku-barcode-print",
+    "title": "FNSKU 条码自己生成打印：贴标前先核对",
+    "category": "账号安全",
+    "keywords": [
+      "FNSKU",
+      "条码"
+    ],
+    "tools": [
+      "barcode-generator",
+      "qr-code"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 60,
+    "slug": "html-entity-description-escape",
+    "title": "描述里的特殊符号变乱码：HTML 实体转义详解",
+    "category": "账号安全",
+    "keywords": [
+      "HTML实体",
+      "特殊字符"
+    ],
+    "tools": [
+      "html-entity",
+      "text-normalizer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 61,
+    "slug": "audio-convert-podcast-mp3",
+    "title": "产品播客转 MP3 分发：格式统一第一步",
+    "category": "音视频",
+    "keywords": [
+      "播客",
+      "音频转换"
+    ],
+    "tools": [
+      "audio-convert",
+      "audio-trim"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 62,
+    "slug": "audio-trim-remove-silence",
+    "title": "录音掐头去尾：口播素材快速清理",
+    "category": "音视频",
+    "keywords": [
+      "音频裁剪",
+      "口播"
+    ],
+    "tools": [
+      "audio-trim",
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 63,
+    "slug": "extract-ad-music-from-video",
+    "title": "广告片里的配乐想单独用：音轨提取法",
+    "category": "音视频",
+    "keywords": [
+      "音频提取",
+      "配乐"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 64,
+    "slug": "m4a-to-mp3-compatibility",
+    "title": "M4A 转 MP3：老设备与平台的兼容处理",
+    "category": "音视频",
+    "keywords": [
+      "M4A转MP3",
+      "音频格式"
+    ],
+    "tools": [
+      "audio-convert",
+      "audio-trim"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 65,
+    "slug": "trim-ad-sound-bite",
+    "title": "15 秒广告音效怎么截：精确到 0.1 秒",
+    "category": "音视频",
+    "keywords": [
+      "音频截取",
+      "广告音效"
+    ],
+    "tools": [
+      "audio-trim",
+      "video-trim"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 66,
+    "slug": "separate-voiceover-from-video",
+    "title": "配音与背景音分离处理：视频音轨导出",
+    "category": "音视频",
+    "keywords": [
+      "配音",
+      "音轨"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-trim"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 67,
+    "slug": "compress-wav-audio-file",
+    "title": "WAV 太大传不动：压缩成 M4A 不塌音质",
+    "category": "音视频",
+    "keywords": [
+      "WAV压缩",
+      "音频体积"
+    ],
+    "tools": [
+      "audio-convert",
+      "video-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 68,
+    "slug": "short-audio-assets-production",
+    "title": "短视频 BGM 素材裁剪：循环点怎么选",
+    "category": "音视频",
+    "keywords": [
+      "BGM",
+      "音频素材"
+    ],
+    "tools": [
+      "audio-trim",
+      "audio-convert"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 69,
+    "slug": "interview-audio-extraction",
+    "title": "供应商采访录音提取：开视频会也能留底稿",
+    "category": "音视频",
+    "keywords": [
+      "会议录音",
+      "音频提取"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-convert"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 70,
+    "slug": "batch-audio-conversion-tips",
+    "title": "一批音频逐个转太慢：批量转换工作流",
+    "category": "音视频",
+    "keywords": [
+      "批量转换",
+      "音频处理"
+    ],
+    "tools": [
+      "audio-convert",
+      "audio-trim"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 71,
+    "slug": "batch-rename-sku-file-structure",
+    "title": "文件名即管理：SKU 批量改名建立目录规范",
+    "category": "运营效率",
+    "keywords": [
+      "批量改名",
+      "文件管理"
+    ],
+    "tools": [
+      "image-batch-rename",
+      "barcode-generator"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 72,
+    "slug": "clipboard-history-multitask",
+    "title": "复制粘贴老丢内容？剪贴板历史救急",
+    "category": "运营效率",
+    "keywords": [
+      "剪贴板",
+      "多任务"
+    ],
+    "tools": [
+      "text-normalizer",
+      "char-counter"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 73,
+    "slug": "glossary-translate-brand-terms",
+    "title": "品牌词翻译不统一：术语表维护法",
+    "category": "运营效率",
+    "keywords": [
+      "术语表",
+      "品牌词"
+    ],
+    "tools": [
+      "title-localizer",
+      "text-normalizer"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 74,
+    "slug": "batch-rename-image-order",
+    "title": "图片顺序命名：详情页图序号一次排好",
+    "category": "运营效率",
+    "keywords": [
+      "图片命名",
+      "顺序编号"
+    ],
+    "tools": [
+      "image-batch-rename",
+      "image-resize"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 75,
+    "slug": "clipboard-long-text-staging",
+    "title": "长文案搬运工作流：剪贴板暂存不打断节奏",
+    "category": "运营效率",
+    "keywords": [
+      "文案搬运",
+      "效率工具"
+    ],
+    "tools": [
+      "char-counter",
+      "text-normalizer"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 76,
+    "slug": "unify-brand-wording-channels",
+    "title": "多渠道品牌话术统一：翻译对照表用法",
+    "category": "运营效率",
+    "keywords": [
+      "品牌话术",
+      "多渠道"
+    ],
+    "tools": [
+      "title-localizer",
+      "text-normalizer"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 77,
+    "slug": "batch-prefix-rename-safety",
+    "title": "批量加前缀不怕错：改名前先预览",
+    "category": "运营效率",
+    "keywords": [
+      "批量前缀",
+      "改名安全"
+    ],
+    "tools": [
+      "image-batch-rename",
+      "image-size-report"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 78,
+    "slug": "clipboard-temp-storage-usage",
+    "title": "临时素材暂存：剪贴板历史的另类用法",
+    "category": "运营效率",
+    "keywords": [
+      "暂存",
+      "剪贴板"
+    ],
+    "tools": [
+      "qr-code",
+      "url-codec"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 79,
+    "slug": "industry-jargon-glossary",
+    "title": "行业黑话对照表：和供应商沟通不误会",
+    "category": "运营效率",
+    "keywords": [
+      "行业术语",
+      "供应商沟通"
+    ],
+    "tools": [
+      "title-localizer",
+      "timestamp-convert"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 80,
+    "slug": "batch-rename-undo-mistake",
+    "title": "批量改名翻车了怎么办：防错与恢复",
+    "category": "运营效率",
+    "keywords": [
+      "改名恢复",
+      "防错"
+    ],
+    "tools": [
+      "image-batch-rename",
+      "hash-generator"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 81,
+    "slug": "zero-upload-workflow-guide",
+    "title": "零上传工作流：为什么卖家不该把素材传给陌生网站",
+    "category": "隐私合规",
+    "keywords": [
+      "零上传",
+      "数据隐私"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "image-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 82,
+    "slug": "exif-gps-privacy-leak",
+    "title": "照片里的 GPS 定位泄露：EXIF 隐私清理",
+    "category": "隐私合规",
+    "keywords": [
+      "GPS泄露",
+      "EXIF"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "image-blind-watermark"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 83,
+    "slug": "blind-watermark-source-tracking",
+    "title": "素材泄露溯源：盲水印追责机制",
+    "category": "隐私合规",
+    "keywords": [
+      "盲水印",
+      "溯源"
+    ],
+    "tools": [
+      "image-blind-watermark",
+      "image-watermark"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 84,
+    "slug": "local-tools-vs-online-tools",
+    "title": "本地工具 vs 在线工具：处理敏感素材选哪个",
+    "category": "隐私合规",
+    "keywords": [
+      "本地处理",
+      "在线工具"
+    ],
+    "tools": [
+      "image-compress",
+      "pdf-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 85,
+    "slug": "password-and-2fa-setup",
+    "title": "密码 + 双重验证：店铺账号防入侵清单",
+    "category": "隐私合规",
+    "keywords": [
+      "双重验证",
+      "账号安全"
+    ],
+    "tools": [
+      "password-generator",
+      "hash-generator"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 86,
+    "slug": "seller-data-responsibility",
+    "title": "卖家也管客户数据：最小化收集原则",
+    "category": "隐私合规",
+    "keywords": [
+      "客户数据",
+      "合规"
+    ],
+    "tools": [
+      "json-formatter",
+      "exif-cleaner"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 87,
+    "slug": "api-token-storage-safety",
+    "title": "Token 别贴群里：凭据安全存放习惯",
+    "category": "隐私合规",
+    "keywords": [
+      "Token安全",
+      "凭据"
+    ],
+    "tools": [
+      "jwt-decoder",
+      "password-generator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 88,
+    "slug": "file-integrity-verification",
+    "title": "给合作方传大文件后：哈希值对账防篡改",
+    "category": "隐私合规",
+    "keywords": [
+      "文件完整性",
+      "哈希"
+    ],
+    "tools": [
+      "hash-generator",
+      "timestamp-convert"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 89,
+    "slug": "image-copyright-blind-mark",
+    "title": "原创图片版权保护：隐形标记胜过角标",
+    "category": "隐私合规",
+    "keywords": [
+      "版权",
+      "隐形水印"
+    ],
+    "tools": [
+      "image-blind-watermark",
+      "image-watermark"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 90,
+    "slug": "privacy-audit-checklist-seller",
+    "title": "卖家数据隐私自查清单：10 分钟过一遍",
+    "category": "隐私合规",
+    "keywords": [
+      "隐私自查",
+      "清单"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "password-generator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 91,
+    "slug": "keyword-analyzer-niche-research",
+    "title": "用关键词分析找细分市场：从搜索词到选品",
+    "category": "选品数据",
+    "keywords": [
+      "选品",
+      "关键词分析"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 92,
+    "slug": "cross-store-profit-comparison",
+    "title": "同款在三个平台卖：跨店利润对比定主推",
+    "category": "选品数据",
+    "keywords": [
+      "多平台",
+      "利润对比"
+    ],
+    "tools": [
+      "multi-store-profit",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 93,
+    "slug": "image-health-listing-conversion",
+    "title": "图片体积影响转化：Listing 健康度排查",
+    "category": "选品数据",
+    "keywords": [
+      "转化率",
+      "图片优化"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 94,
+    "slug": "promo-schedule-timestamps",
+    "title": "促销排期换算：跨时区活动时间不再错",
+    "category": "选品数据",
+    "keywords": [
+      "促销排期",
+      "时区"
+    ],
+    "tools": [
+      "timestamp-convert",
+      "currency-converter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 95,
+    "slug": "long-tail-keyword-mining",
+    "title": "长尾词挖掘实操：小词做大流量",
+    "category": "选品数据",
+    "keywords": [
+      "长尾词",
+      "流量"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "char-counter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 96,
+    "slug": "breakeven-point-calculation",
+    "title": "保本点测算：这款产品敢不敢冲量",
+    "category": "选品数据",
+    "keywords": [
+      "保本点",
+      "冲量"
+    ],
+    "tools": [
+      "profit-calculator",
+      "fba-fee-estimator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 97,
+    "slug": "sourcing-cost-currency-check",
+    "title": "采购成本快速折算：人民币报价到美元售价",
+    "category": "选品数据",
+    "keywords": [
+      "采购成本",
+      "汇率换算"
+    ],
+    "tools": [
+      "currency-converter",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 98,
+    "slug": "seasonal-keyword-timing",
+    "title": "季节词提前布局：什么时候开始养词",
+    "category": "选品数据",
+    "keywords": [
+      "季节词",
+      "关键词布局"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "timestamp-convert"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 99,
+    "slug": "multi-currency-profit-report",
+    "title": "多币种利润报表：把汇率差算进成本",
+    "category": "选品数据",
+    "keywords": [
+      "多币种",
+      "利润报表"
+    ],
+    "tools": [
+      "multi-store-profit",
+      "currency-converter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 100,
+    "slug": "black-friday-keyword-prep",
+    "title": "黑五关键词备战：大促前的流量词盘点",
+    "category": "选品数据",
+    "keywords": [
+      "黑五",
+      "大促关键词"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "sensitive-word-check"
+    ],
+    "type": "listicle"
+  }
+]
