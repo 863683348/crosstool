@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoResizeClient from '@/components/tools/VideoResizeClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频分辨率调整（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoResizeClient />;
+  return (
+    <>
+      <VideoResizeClient />
+      <ToolDoc slug="video-resize" />
+    </>
+  );
 }

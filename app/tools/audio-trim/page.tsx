@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import AudioTrimClient from '@/components/tools/AudioTrimClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '音频裁剪（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <AudioTrimClient />;
+  return (
+    <>
+      <AudioTrimClient />
+      <ToolDoc slug="audio-trim" />
+    </>
+  );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoCompressClient from '@/components/tools/VideoCompressClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频压缩（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoCompressClient />;
+  return (
+    <>
+      <VideoCompressClient />
+      <ToolDoc slug="video-compress" />
+    </>
+  );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import AudioConvertClient from '@/components/tools/AudioConvertClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '音频格式转换（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <AudioConvertClient />;
+  return (
+    <>
+      <AudioConvertClient />
+      <ToolDoc slug="audio-convert" />
+    </>
+  );
 }

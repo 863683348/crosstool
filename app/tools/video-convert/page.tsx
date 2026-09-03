@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoConvertClient from '@/components/tools/VideoConvertClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频格式转换（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoConvertClient />;
+  return (
+    <>
+      <VideoConvertClient />
+      <ToolDoc slug="video-convert" />
+    </>
+  );
 }

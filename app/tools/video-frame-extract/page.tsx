@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoFrameExtractClient from '@/components/tools/VideoFrameExtractClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频帧提取（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoFrameExtractClient />;
+  return (
+    <>
+      <VideoFrameExtractClient />
+      <ToolDoc slug="video-frame-extract" />
+    </>
+  );
 }

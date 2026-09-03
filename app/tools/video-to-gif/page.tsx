@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoToGifClient from '@/components/tools/VideoToGifClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频转 GIF（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoToGifClient />;
+  return (
+    <>
+      <VideoToGifClient />
+      <ToolDoc slug="video-to-gif" />
+    </>
+  );
 }

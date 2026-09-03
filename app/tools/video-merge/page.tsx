@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoMergeClient from '@/components/tools/VideoMergeClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频合并（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoMergeClient />;
+  return (
+    <>
+      <VideoMergeClient />
+      <ToolDoc slug="video-merge" />
+    </>
+  );
 }

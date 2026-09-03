@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoTrimClient from '@/components/tools/VideoTrimClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频裁剪（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoTrimClient />;
+  return (
+    <>
+      <VideoTrimClient />
+      <ToolDoc slug="video-trim" />
+    </>
+  );
 }

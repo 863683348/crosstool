@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ImagesToVideoClient from '@/components/tools/ImagesToVideoClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '图片转视频（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ImagesToVideoClient />;
+  return (
+    <>
+      <ImagesToVideoClient />
+      <ToolDoc slug="images-to-video" />
+    </>
+  );
 }

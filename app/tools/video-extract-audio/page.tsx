@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import VideoExtractAudioClient from '@/components/tools/VideoExtractAudioClient';
+import ToolDoc from '@/components/ToolDoc';
 
 export const metadata: Metadata = {
   title: '视频提取音频（本地）',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <VideoExtractAudioClient />;
+  return (
+    <>
+      <VideoExtractAudioClient />
+      <ToolDoc slug="video-extract-audio" />
+    </>
+  );
 }
