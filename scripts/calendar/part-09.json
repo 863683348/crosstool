@@ -1,0 +1,809 @@
+[
+  {
+    "day": 81,
+    "slot": 0,
+    "slug": "compress-still-over",
+    "title": "视频压缩后上传还是超限？继续压的底线",
+    "category": "视频营销",
+    "keywords": [
+      "视频压缩",
+      "体积限制",
+      "上传"
+    ],
+    "tools": [
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 81,
+    "slot": 1,
+    "slug": "merge-tax-record",
+    "title": "完税证明合并：报税材料归档",
+    "category": "文档处理",
+    "keywords": [
+      "PDF合并",
+      "完税",
+      "报税"
+    ],
+    "tools": [
+      "pdf-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 81,
+    "slot": 2,
+    "slug": "char-ask-seller",
+    "title": "问大家/QA 字数：简洁回答",
+    "category": "Listing 优化",
+    "keywords": [
+      "字符数",
+      "QA",
+      "简洁"
+    ],
+    "tools": [
+      "char-counter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 81,
+    "slot": 3,
+    "slug": "audio-mono-stereo",
+    "title": "单声道转立体声？适用场景",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "单声道",
+      "立体声"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 81,
+    "slot": 4,
+    "slug": "jwt-revoke",
+    "title": "Token 吊销：离职员工立刻失效",
+    "category": "隐私合规",
+    "keywords": [
+      "JWT",
+      "吊销",
+      "离职"
+    ],
+    "tools": [
+      "jwt-decoder"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 82,
+    "slot": 0,
+    "slug": "remove-bg-swatch",
+    "title": "色卡/色板去背景：颜色不失真",
+    "category": "图片优化",
+    "keywords": [
+      "去背景",
+      "色卡",
+      "颜色"
+    ],
+    "tools": [
+      "image-remove-bg"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 82,
+    "slot": 1,
+    "slug": "duty-free-threshold",
+    "title": "各国免税额：小额包裹怎么报",
+    "category": "跨境财务",
+    "keywords": [
+      "关税",
+      "免税额",
+      "小包裹"
+    ],
+    "tools": [
+      "duty-estimator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 82,
+    "slot": 2,
+    "slug": "html-entity-nbsp",
+    "title": "不断行空格等实体：排版细节",
+    "category": "账号安全",
+    "keywords": [
+      "HTML实体",
+      "空格",
+      "排版"
+    ],
+    "tools": [
+      "html-entity"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 82,
+    "slot": 3,
+    "slug": "rename-clean-special",
+    "title": "文件名特殊字符清理：跨平台兼容",
+    "category": "运营效率",
+    "keywords": [
+      "批量改名",
+      "特殊字符",
+      "兼容"
+    ],
+    "tools": [
+      "image-batch-rename"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 82,
+    "slot": 4,
+    "slug": "char-count-review",
+    "title": "评论字数分析：买家关注点",
+    "category": "选品数据",
+    "keywords": [
+      "字符数",
+      "评论",
+      "分析"
+    ],
+    "tools": [
+      "char-counter",
+      "keyword-analyzer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 83,
+    "slot": 0,
+    "slug": "trim-remove-logo",
+    "title": "视频裁剪去除片头片尾：干净利落",
+    "category": "视频营销",
+    "keywords": [
+      "视频裁剪",
+      "片头片尾",
+      "水印"
+    ],
+    "tools": [
+      "video-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 83,
+    "slot": 1,
+    "slug": "compress-compressed",
+    "title": "PDF 已经压过还能再压？",
+    "category": "文档处理",
+    "keywords": [
+      "PDF压缩",
+      "二次压缩",
+      "极限"
+    ],
+    "tools": [
+      "pdf-compress"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 83,
+    "slot": 2,
+    "slug": "normalize-currency",
+    "title": "价格文案规范化：货币符号统一",
+    "category": "Listing 优化",
+    "keywords": [
+      "文本规范化",
+      "货币",
+      "统一"
+    ],
+    "tools": [
+      "text-normalizer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 83,
+    "slot": 3,
+    "slug": "audio-trim-intro-3s",
+    "title": "口播前 3 秒黄金期：裁剪开场",
+    "category": "音视频",
+    "keywords": [
+      "音频裁剪",
+      "开场",
+      "3秒"
+    ],
+    "tools": [
+      "audio-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 83,
+    "slot": 4,
+    "slug": "exif-resale",
+    "title": "转售电子产品前清 EXIF：隐私",
+    "category": "隐私合规",
+    "keywords": [
+      "EXIF",
+      "转售",
+      "隐私"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 84,
+    "slot": 0,
+    "slug": "compress-lossless-check",
+    "title": "无损压缩真无损吗？肉眼对比法",
+    "category": "图片优化",
+    "keywords": [
+      "无损压缩",
+      "图片压缩",
+      "对比"
+    ],
+    "tools": [
+      "image-compress"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 84,
+    "slot": 1,
+    "slug": "return-reverse-logistics",
+    "title": "逆向物流成本：退货到底花多少",
+    "category": "跨境财务",
+    "keywords": [
+      "退货成本",
+      "逆向物流",
+      "运费"
+    ],
+    "tools": [
+      "return-cost-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 84,
+    "slot": 2,
+    "slug": "jwt-header-algo",
+    "title": "JWT header 算法：安全性影响",
+    "category": "账号安全",
+    "keywords": [
+      "JWT",
+      "header",
+      "算法"
+    ],
+    "tools": [
+      "jwt-decoder"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 84,
+    "slot": 3,
+    "slug": "normalize-price-list",
+    "title": "价格表规范化：千分位统一",
+    "category": "运营效率",
+    "keywords": [
+      "文本规范化",
+      "价格表",
+      "千分位"
+    ],
+    "tools": [
+      "text-normalizer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 84,
+    "slot": 4,
+    "slug": "fba-return-rate-plan",
+    "title": "退货率进选品模型：风险对冲",
+    "category": "选品数据",
+    "keywords": [
+      "FBA费用",
+      "退货率",
+      "风险"
+    ],
+    "tools": [
+      "fba-fee-estimator",
+      "return-cost-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 85,
+    "slot": 0,
+    "slug": "merge-collection-workflow",
+    "title": "素材太多合并成合集：整理工作流",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "合集",
+      "素材整理"
+    ],
+    "tools": [
+      "video-merge",
+      "video-trim"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 85,
+    "slot": 1,
+    "slug": "split-remove-blank",
+    "title": "PDF 拆出并去掉空白页：打印省纸",
+    "category": "文档处理",
+    "keywords": [
+      "PDF拆分",
+      "空白页",
+      "省纸"
+    ],
+    "tools": [
+      "pdf-split"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 85,
+    "slot": 2,
+    "slug": "bullet-why-buy",
+    "title": "五点描述回答为什么买：转化逻辑",
+    "category": "Listing 优化",
+    "keywords": [
+      "五点描述",
+      "为什么买",
+      "转化"
+    ],
+    "tools": [
+      "bullet-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 85,
+    "slot": 3,
+    "slug": "extract-meeting",
+    "title": "会议录像转音频：重点回听",
+    "category": "音视频",
+    "keywords": [
+      "音频提取",
+      "会议",
+      "回听"
+    ],
+    "tools": [
+      "video-extract-audio"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 85,
+    "slot": 4,
+    "slug": "blind-watermark-proof",
+    "title": "隐形水印做创作证明：时间线",
+    "category": "隐私合规",
+    "keywords": [
+      "隐形水印",
+      "创作证明",
+      "时间线"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 0,
+    "slug": "convert-svg-png",
+    "title": "SVG 转 PNG：矢量素材网页兼容",
+    "category": "图片优化",
+    "keywords": [
+      "SVG转PNG",
+      "图片格式",
+      "矢量"
+    ],
+    "tools": [
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 1,
+    "slug": "multi-store-export",
+    "title": "多店铺利润导出：报表带走看",
+    "category": "跨境财务",
+    "keywords": [
+      "多店铺",
+      "导出",
+      "报表"
+    ],
+    "tools": [
+      "multi-store-profit"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 2,
+    "slug": "password-rotation",
+    "title": "定期换密码：多久换一次合理",
+    "category": "账号安全",
+    "keywords": [
+      "密码生成",
+      "轮换",
+      "周期"
+    ],
+    "tools": [
+      "password-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 3,
+    "slug": "char-product-name",
+    "title": "产品名长度规范：各平台上限",
+    "category": "运营效率",
+    "keywords": [
+      "字符数",
+      "产品名",
+      "规范"
+    ],
+    "tools": [
+      "char-counter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 4,
+    "slug": "keyword-gap",
+    "title": "关键词空白地带：竞品没做你来做",
+    "category": "选品数据",
+    "keywords": [
+      "关键词分析",
+      "空白",
+      "机会"
+    ],
+    "tools": [
+      "keyword-analyzer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 87,
+    "slot": 0,
+    "slug": "gif-resize-small",
+    "title": "视频转 GIF 压缩循环动图尺寸",
+    "category": "视频营销",
+    "keywords": [
+      "动图尺寸",
+      "视频转GIF",
+      "压缩"
+    ],
+    "tools": [
+      "video-to-gif",
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 87,
+    "slot": 1,
+    "slug": "pdf-image-watermark-batch",
+    "title": "多页 PDF 转图批量加水印",
+    "category": "文档处理",
+    "keywords": [
+      "PDF转图片",
+      "批量水印",
+      "多页"
+    ],
+    "tools": [
+      "pdf-to-images",
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 87,
+    "slot": 2,
+    "slug": "sensitive-country-list",
+    "title": "敏感词清单：多国对照自查表",
+    "category": "Listing 优化",
+    "keywords": [
+      "敏感词",
+      "多国",
+      "清单"
+    ],
+    "tools": [
+      "sensitive-word-check"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 87,
+    "slot": 3,
+    "slug": "audio-format-sort",
+    "title": "音频格式大全：该用哪个",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "大全",
+      "选择"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 87,
+    "slot": 4,
+    "slug": "compress-cache-clean",
+    "title": "本地工具用完清缓存：不留残件",
+    "category": "隐私合规",
+    "keywords": [
+      "图片压缩",
+      "缓存",
+      "清理"
+    ],
+    "tools": [
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 0,
+    "slug": "resize-crop-fill",
+    "title": "缩放裁剪填充：图片不变形的三件套",
+    "category": "图片优化",
+    "keywords": [
+      "图片缩放",
+      "裁剪",
+      "填充"
+    ],
+    "tools": [
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 1,
+    "slug": "currency-forward-contract",
+    "title": "远期结汇：锁定汇率防波动",
+    "category": "跨境财务",
+    "keywords": [
+      "汇率",
+      "远期结汇",
+      "锁汇"
+    ],
+    "tools": [
+      "currency-converter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 2,
+    "slug": "json-nested",
+    "title": "嵌套 JSON 分层看：结构清晰",
+    "category": "账号安全",
+    "keywords": [
+      "JSON格式化",
+      "嵌套",
+      "分层"
+    ],
+    "tools": [
+      "json-formatter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 3,
+    "slug": "barcode-ean13",
+    "title": "EAN-13 校验位：条码正确性",
+    "category": "运营效率",
+    "keywords": [
+      "条码",
+      "EAN13",
+      "校验"
+    ],
+    "tools": [
+      "barcode-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 4,
+    "slug": "profit-sensitivity",
+    "title": "利润敏感性分析：价格波动影响",
+    "category": "选品数据",
+    "keywords": [
+      "利润计算",
+      "敏感性",
+      "价格"
+    ],
+    "tools": [
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 0,
+    "slug": "frame-aplus-image",
+    "title": "抽帧提取高清产品图做 A+ 页面",
+    "category": "视频营销",
+    "keywords": [
+      "A+页面",
+      "抽帧",
+      "高清产品图"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 1,
+    "slug": "images-pdf-list-pack",
+    "title": "打包清单图转 PDF：发货核对",
+    "category": "文档处理",
+    "keywords": [
+      "图片转PDF",
+      "打包清单",
+      "发货"
+    ],
+    "tools": [
+      "images-to-pdf"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 2,
+    "slug": "abtest-avoid-noise",
+    "title": "标题测试排除干扰：流量稳定期再测",
+    "category": "Listing 优化",
+    "keywords": [
+      "标题A/B",
+      "干扰",
+      "流量"
+    ],
+    "tools": [
+      "title-ab-test"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 3,
+    "slug": "audio-trim-merge-check",
+    "title": "裁剪后再接其他音轨：检查衔接",
+    "category": "音视频",
+    "keywords": [
+      "音频裁剪",
+      "拼接",
+      "衔接"
+    ],
+    "tools": [
+      "audio-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 4,
+    "slug": "password-phishing",
+    "title": "钓鱼邮件识别：别在链接里输密码",
+    "category": "隐私合规",
+    "keywords": [
+      "密码生成",
+      "钓鱼",
+      "识别"
+    ],
+    "tools": [
+      "password-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 0,
+    "slug": "blind-watermark-price",
+    "title": "价格敏感图加隐形水印：防截图外传",
+    "category": "图片优化",
+    "keywords": [
+      "隐形水印",
+      "价格图",
+      "防截图"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 1,
+    "slug": "profit-gross-net",
+    "title": "毛利与净利：别只看表面数字",
+    "category": "跨境财务",
+    "keywords": [
+      "利润计算",
+      "毛利",
+      "净利"
+    ],
+    "tools": [
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 2,
+    "slug": "json-validate-bom",
+    "title": "带 BOM 的 JSON 报错：编码坑",
+    "category": "账号安全",
+    "keywords": [
+      "JSON校验",
+      "BOM",
+      "编码"
+    ],
+    "tools": [
+      "json-validator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 3,
+    "slug": "resize-batch-webp",
+    "title": "图片批量转 WebP：全站提速",
+    "category": "运营效率",
+    "keywords": [
+      "图片缩放",
+      "WebP",
+      "提速"
+    ],
+    "tools": [
+      "image-resize",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 4,
+    "slug": "multi-store-roi",
+    "title": "多店铺 ROI 对比：投流给谁",
+    "category": "选品数据",
+    "keywords": [
+      "多店铺",
+      "ROI",
+      "投流"
+    ],
+    "tools": [
+      "multi-store-profit"
+    ],
+    "type": "tutorial"
+  }
+]

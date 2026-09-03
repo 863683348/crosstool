@@ -12,6 +12,9 @@ export const CATEGORY_SLUGS: Record<string, string> = {
   listing: 'Listing 优化',
   security: '账号安全',
   media: '音视频',
+  operations: '运营效率',
+  privacy: '隐私合规',
+  sourcing: '选品数据',
 };
 
 export interface RelatedTool {

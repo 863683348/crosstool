@@ -2,10 +2,17 @@ name: Daily Content (crosstool 100-day pipeline)
 
 on:
   schedule:
-    - cron: "0 18 * * *" # UTC 18:00 = 北京 02:00
+    # 白天时间安排表：北京 09:00 / 11:00 / 14:00 / 16:00 / 18:00（= UTC 01/03/06/08/10）
+    # 每天 5 个时段各发 1 篇，覆盖 5 个不同分类（1 天 1 分类 1 篇）
+    - cron: "0 1 * * *"  # UTC 01:00 = 北京 09:00
+    - cron: "0 3 * * *"  # UTC 03:00 = 北京 11:00
+    - cron: "0 6 * * *"  # UTC 06:00 = 北京 14:00
+    - cron: "0 8 * * *"  # UTC 08:00 = 北京 16:00
+    - cron: "0 10 * * *" # UTC 10:00 = 北京 18:00
   workflow_dispatch:
     inputs:
       day: { description: "指定日历 day（留空=自动找下一个）", required: false }
+      slot: { description: "指定当天 slot 0-4（留空=当天第一个未发布）", required: false }
       dry_run: { description: "只校验不生成", type: boolean, default: false }
 
 permissions:
@@ -32,6 +39,7 @@ jobs:
         run: |
           ARGS=""
           if [ -n "${{ inputs.day }}" ]; then ARGS="$ARGS --day ${{ inputs.day }}"; fi
+          if [ -n "${{ inputs.slot }}" ]; then ARGS="$ARGS --slot ${{ inputs.slot }}"; fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           node scripts/fetch-content-daily.mjs $ARGS
 

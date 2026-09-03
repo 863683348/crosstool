@@ -1,0 +1,810 @@
+[
+  {
+    "day": 71,
+    "slot": 0,
+    "slug": "gif-cs-reply",
+    "title": "视频转 GIF 用于客服快捷回复：一眼看懂",
+    "category": "视频营销",
+    "keywords": [
+      "客服动图",
+      "视频转GIF",
+      "快捷回复"
+    ],
+    "tools": [
+      "video-to-gif"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 71,
+    "slot": 1,
+    "slug": "merge-inspection-report",
+    "title": "质检报告合并：溯源材料一份全",
+    "category": "文档处理",
+    "keywords": [
+      "PDF合并",
+      "质检报告",
+      "溯源"
+    ],
+    "tools": [
+      "pdf-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 71,
+    "slot": 2,
+    "slug": "bullet-review-mining",
+    "title": "从评论挖卖点写五点：数据驱动",
+    "category": "Listing 优化",
+    "keywords": [
+      "五点描述",
+      "评论挖掘",
+      "卖点"
+    ],
+    "tools": [
+      "bullet-generator",
+      "keyword-analyzer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 71,
+    "slot": 3,
+    "slug": "extract-track",
+    "title": "视频多音轨提取：选哪条",
+    "category": "音视频",
+    "keywords": [
+      "音频提取",
+      "音轨",
+      "选择"
+    ],
+    "tools": [
+      "video-extract-audio"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 71,
+    "slot": 4,
+    "slug": "watermark-batch-legal",
+    "title": "批量水印做版权声明：全覆盖",
+    "category": "隐私合规",
+    "keywords": [
+      "批量水印",
+      "版权",
+      "全覆盖"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 0,
+    "slug": "watermark-repeat-ratio",
+    "title": "批量水印平铺密度：美观与防伪平衡",
+    "category": "图片优化",
+    "keywords": [
+      "批量水印",
+      "平铺",
+      "防伪"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 1,
+    "slug": "multi-store-shared-inventory",
+    "title": "多店铺共享库存：利润怎么分",
+    "category": "跨境财务",
+    "keywords": [
+      "多店铺",
+      "共享库存",
+      "利润"
+    ],
+    "tools": [
+      "multi-store-profit"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 2,
+    "slug": "url-encode-cn",
+    "title": "中文参数 URL 编码：分享不断链",
+    "category": "账号安全",
+    "keywords": [
+      "URL编码",
+      "中文",
+      "分享"
+    ],
+    "tools": [
+      "url-codec"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 3,
+    "slug": "size-report-sku",
+    "title": "按 SKU 看图片体积：定位问题",
+    "category": "运营效率",
+    "keywords": [
+      "图片体积",
+      "SKU",
+      "定位"
+    ],
+    "tools": [
+      "image-size-report"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 4,
+    "slug": "profit-break-even-qty",
+    "title": "保本销量：要卖多少才回本",
+    "category": "选品数据",
+    "keywords": [
+      "利润计算",
+      "保本销量",
+      "回本"
+    ],
+    "tools": [
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 0,
+    "slug": "merge-transition",
+    "title": "视频合并加转场：多镜头自然衔接",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "转场",
+      "镜头衔接"
+    ],
+    "tools": [
+      "video-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 1,
+    "slug": "compress-archive-pdf",
+    "title": "历史文件压缩归档：省空间好迁移",
+    "category": "文档处理",
+    "keywords": [
+      "PDF压缩",
+      "归档",
+      "空间"
+    ],
+    "tools": [
+      "pdf-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 2,
+    "slug": "sensitive-environment",
+    "title": "环保类目敏感词：绿色声明要谨慎",
+    "category": "Listing 优化",
+    "keywords": [
+      "敏感词",
+      "环保",
+      "绿色声明"
+    ],
+    "tools": [
+      "sensitive-word-check"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 3,
+    "slug": "audio-bitrate-size",
+    "title": "音频比特率与文件大小对照",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "比特率",
+      "大小"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 4,
+    "slug": "pdf-encrypt-local",
+    "title": "PDF 本地处理：加密文件不出网",
+    "category": "隐私合规",
+    "keywords": [
+      "PDF压缩",
+      "加密",
+      "本地"
+    ],
+    "tools": [
+      "pdf-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 0,
+    "slug": "exif-proof-of-work",
+    "title": "保留 EXIF 自证原创：别急着清",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF",
+      "原创自证",
+      "保留"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 1,
+    "slug": "currency-monthly-settle",
+    "title": "月结汇率统一：财务核算不打架",
+    "category": "跨境财务",
+    "keywords": [
+      "汇率",
+      "月结",
+      "核算"
+    ],
+    "tools": [
+      "currency-converter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 2,
+    "slug": "qr-wechat-contact",
+    "title": "供应商微信二维码：名片化",
+    "category": "账号安全",
+    "keywords": [
+      "二维码",
+      "微信",
+      "名片"
+    ],
+    "tools": [
+      "qr-code"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 3,
+    "slug": "qr-review-guide",
+    "title": "评价引导二维码：售后卡设计",
+    "category": "运营效率",
+    "keywords": [
+      "二维码",
+      "评价",
+      "引导"
+    ],
+    "tools": [
+      "qr-code"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 4,
+    "slug": "multi-store-inventory-split",
+    "title": "多店铺库存分配：数据说话",
+    "category": "选品数据",
+    "keywords": [
+      "多店铺",
+      "库存",
+      "分配"
+    ],
+    "tools": [
+      "multi-store-profit"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 0,
+    "slug": "frame-use-moment",
+    "title": "截取视频里的产品使用瞬间：做场景图",
+    "category": "视频营销",
+    "keywords": [
+      "抽帧",
+      "使用场景",
+      "产品图"
+    ],
+    "tools": [
+      "video-frame-extract"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 1,
+    "slug": "split-packing-list",
+    "title": "装箱单 PDF 拆出当页：随货附上",
+    "category": "文档处理",
+    "keywords": [
+      "PDF拆分",
+      "装箱单",
+      "随货"
+    ],
+    "tools": [
+      "pdf-split"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 2,
+    "slug": "abtest-two-variant",
+    "title": "标题 A/B 两版就够：别多版本内耗",
+    "category": "Listing 优化",
+    "keywords": [
+      "标题A/B",
+      "双版本",
+      "测试"
+    ],
+    "tools": [
+      "title-ab-test"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 3,
+    "slug": "audio-trim-preview",
+    "title": "裁剪前先试听：别瞎切",
+    "category": "音视频",
+    "keywords": [
+      "音频裁剪",
+      "试听",
+      "预览"
+    ],
+    "tools": [
+      "audio-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 4,
+    "slug": "password-rotate-schedule",
+    "title": "密码轮换表：季度一换",
+    "category": "隐私合规",
+    "keywords": [
+      "密码生成",
+      "轮换",
+      "排期"
+    ],
+    "tools": [
+      "password-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 0,
+    "slug": "rename-before-backup",
+    "title": "改名备份前先做：防误操作",
+    "category": "图片优化",
+    "keywords": [
+      "批量改名",
+      "备份",
+      "防误"
+    ],
+    "tools": [
+      "image-batch-rename"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 1,
+    "slug": "profit-bulk-margin",
+    "title": "批量算毛利：一键看全 SKU 利润",
+    "category": "跨境财务",
+    "keywords": [
+      "利润计算",
+      "批量",
+      "毛利"
+    ],
+    "tools": [
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 2,
+    "slug": "hash-file-hash",
+    "title": "文件哈希一致性：对账防篡改",
+    "category": "账号安全",
+    "keywords": [
+      "哈希",
+      "文件",
+      "对账"
+    ],
+    "tools": [
+      "hash-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 3,
+    "slug": "timestamp-report-cutoff",
+    "title": "报表截止时间戳：结算对齐",
+    "category": "运营效率",
+    "keywords": [
+      "时间戳",
+      "报表",
+      "截止"
+    ],
+    "tools": [
+      "timestamp-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 4,
+    "slug": "image-webp-seo",
+    "title": "WebP 图片 SEO：加载快排名好",
+    "category": "选品数据",
+    "keywords": [
+      "图片体积",
+      "WebP",
+      "SEO"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 0,
+    "slug": "vertical-whatsapp",
+    "title": "竖屏视频用于 WhatsApp/朋友圈：格式适配",
+    "category": "视频营销",
+    "keywords": [
+      "竖屏视频",
+      "WhatsApp",
+      "格式适配"
+    ],
+    "tools": [
+      "video-resize",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 1,
+    "slug": "pdf-image-emblem",
+    "title": "PDF 转图保留格式：排版不乱",
+    "category": "文档处理",
+    "keywords": [
+      "PDF转图片",
+      "排版",
+      "格式"
+    ],
+    "tools": [
+      "pdf-to-images"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 2,
+    "slug": "title-localize-korea",
+    "title": "韩国站标题本地化：关键词靠前",
+    "category": "Listing 优化",
+    "keywords": [
+      "标题本地化",
+      "韩国站",
+      "关键词"
+    ],
+    "tools": [
+      "title-localizer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 3,
+    "slug": "extract-whatsapp",
+    "title": "视频转音频发语音：不占视频流量",
+    "category": "音视频",
+    "keywords": [
+      "音频提取",
+      "语音",
+      "分享"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 4,
+    "slug": "hash-integrity-supplier",
+    "title": "供应商文件哈希对账：完整性",
+    "category": "隐私合规",
+    "keywords": [
+      "哈希",
+      "供应商",
+      "完整性"
+    ],
+    "tools": [
+      "hash-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 0,
+    "slug": "size-report-compress-ratio",
+    "title": "体积报表指导压缩：先看再压更聪明",
+    "category": "图片优化",
+    "keywords": [
+      "图片体积",
+      "压缩比",
+      "报表"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 1,
+    "slug": "vat-intra-eu",
+    "title": "欧盟内跨境销售：VAT 怎么交",
+    "category": "跨境财务",
+    "keywords": [
+      "VAT",
+      "欧盟内",
+      "跨境销售"
+    ],
+    "tools": [
+      "vat-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 2,
+    "slug": "timestamp-format",
+    "title": "时间戳格式化：显示更友好",
+    "category": "账号安全",
+    "keywords": [
+      "时间戳",
+      "格式化",
+      "显示"
+    ],
+    "tools": [
+      "timestamp-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 3,
+    "slug": "hash-backup-check",
+    "title": "备份完整性哈希：恢复无忧",
+    "category": "运营效率",
+    "keywords": [
+      "哈希",
+      "备份",
+      "完整性"
+    ],
+    "tools": [
+      "hash-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 4,
+    "slug": "timestamp-keyword-hour",
+    "title": "关键词热度小时级：投放时机",
+    "category": "选品数据",
+    "keywords": [
+      "时间戳",
+      "关键词",
+      "时段"
+    ],
+    "tools": [
+      "timestamp-convert",
+      "keyword-analyzer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 0,
+    "slug": "images-story-video",
+    "title": "图片生成视频做产品故事：品牌叙事新方式",
+    "category": "视频营销",
+    "keywords": [
+      "图片转视频",
+      "品牌故事",
+      "产品视频"
+    ],
+    "tools": [
+      "images-to-video"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 1,
+    "slug": "images-pdf-design-draft",
+    "title": "设计稿图转 PDF：发给印刷厂",
+    "category": "文档处理",
+    "keywords": [
+      "图片转PDF",
+      "设计稿",
+      "印刷"
+    ],
+    "tools": [
+      "images-to-pdf"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 2,
+    "slug": "density-head-5",
+    "title": "标题前 5 个词最关键：密度分布",
+    "category": "Listing 优化",
+    "keywords": [
+      "关键词密度",
+      "标题前置",
+      "分布"
+    ],
+    "tools": [
+      "keyword-analyzer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 3,
+    "slug": "batch-rename-audio",
+    "title": "音频批量转格式并命名：素材管理",
+    "category": "音视频",
+    "keywords": [
+      "音频转换",
+      "批量",
+      "命名"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 4,
+    "slug": "json-data-subject",
+    "title": "用户数据最小化：只留订单必需",
+    "category": "隐私合规",
+    "keywords": [
+      "JSON格式化",
+      "数据最小化",
+      "订单"
+    ],
+    "tools": [
+      "json-formatter"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 0,
+    "slug": "rounded-border-thumb",
+    "title": "缩略图统一圆角：视觉更整齐",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "缩略图",
+      "统一"
+    ],
+    "tools": [
+      "image-rounded-border",
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 1,
+    "slug": "fba-removal-fee",
+    "title": "弃置/移除费：清库存也要算钱",
+    "category": "跨境财务",
+    "keywords": [
+      "FBA移除",
+      "清库存",
+      "费用"
+    ],
+    "tools": [
+      "fba-fee-estimator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 2,
+    "slug": "barcode-print-labels",
+    "title": "条码打印标签：热敏纸也能用",
+    "category": "账号安全",
+    "keywords": [
+      "条码",
+      "打印",
+      "标签"
+    ],
+    "tools": [
+      "barcode-generator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 3,
+    "slug": "localize-ad-copy",
+    "title": "广告语本地化：避免翻译事故",
+    "category": "运营效率",
+    "keywords": [
+      "标题本地化",
+      "广告语",
+      "本地化"
+    ],
+    "tools": [
+      "title-localizer"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 4,
+    "slug": "currency-pricing-anchor",
+    "title": "锚定定价：汇率换算定价策略",
+    "category": "选品数据",
+    "keywords": [
+      "汇率",
+      "定价",
+      "锚定"
+    ],
+    "tools": [
+      "currency-converter",
+      "profit-calculator"
+    ],
+    "type": "tutorial"
+  }
+]
