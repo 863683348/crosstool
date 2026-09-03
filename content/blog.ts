@@ -3,6 +3,17 @@
 // 每日发布：scripts/fetch-content-daily.mjs 只向 blog.daily.json 追加，不碰本文件，杜绝格式破坏。
 export type BlogType = 'tutorial' | 'review' | 'compare' | 'listicle';
 
+// 分类：英文 slug → 中文显示（分类页 URL 用英文 slug，避开中文 params 编码问题）
+export const CATEGORY_SLUGS: Record<string, string> = {
+  video: '视频营销',
+  document: '文档处理',
+  image: '图片优化',
+  finance: '跨境财务',
+  listing: 'Listing 优化',
+  security: '账号安全',
+  media: '音视频',
+};
+
 export interface RelatedTool {
   slug: string;
   title: string;

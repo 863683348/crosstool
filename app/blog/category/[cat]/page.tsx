@@ -1,19 +1,25 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { blogPosts } from '@/content/blog';
+import { blogPosts, CATEGORY_SLUGS } from '@/content/blog';
 
 type Props = { params: Promise<{ cat: string }> };
 
+const SLUG_TO_CAT: Record<string, string> = Object.fromEntries(
+  Object.entries(CATEGORY_SLUGS).map(([s, c]) => [c, s])
+);
+
 export function generateStaticParams() {
   const cats = [...new Set(blogPosts.map((p) => p.category))];
-  return cats.map((c) => ({ cat: encodeURIComponent(c) }));
+  const slugs = cats.map((c) => SLUG_TO_CAT[c]).filter(Boolean);
+  // 若有未映射分类，fallback 用编码中文（仍可访问，主路径走英文 slug）
+  return slugs.map((s) => ({ cat: s }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { cat } = await params;
-  const category = decodeURIComponent(cat);
-  const posts = blogPosts.filter((p) => p.category === category);
+  const category = CATEGORY_SLUGS[cat];
+  const posts = category ? blogPosts.filter((p) => p.category === category) : [];
   if (posts.length === 0) return {};
   return {
     title: `${category}工具实战 - CrossTool 博客`,
@@ -24,7 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogCategoryPage({ params }: Props) {
   const { cat } = await params;
-  const category = decodeURIComponent(cat);
+  const category = CATEGORY_SLUGS[cat];
+  if (!category) notFound();
   const posts = blogPosts
     .filter((p) => p.category === category)
     .sort((a, b) => (a.date < b.date ? 1 : -1));

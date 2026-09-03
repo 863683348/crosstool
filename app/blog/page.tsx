@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { blogPosts } from '@/content/blog';
+import { blogPosts, CATEGORY_SLUGS } from '@/content/blog';
 
 export const metadata: Metadata = {
   title: '跨境电商工具实战博客 - CrossTool',
@@ -8,6 +8,11 @@ export const metadata: Metadata = {
     '跨境卖家工具实战文章：商品视频压缩、图片处理、PDF、VAT 关税计算、Listing 优化、账号安全，全部配合本地零上传工具使用。',
   alternates: { canonical: '/blog' },
 };
+
+// 中文分类 → 英文 slug（与分类页 CATEGORY_SLUGS 一致）
+const CAT_TO_SLUG: Record<string, string> = Object.fromEntries(
+  Object.entries(CATEGORY_SLUGS).map(([s, c]) => [c, s])
+);
 
 export default function BlogListPage() {
   const posts = [...blogPosts].sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -22,7 +27,7 @@ export default function BlogListPage() {
         {categories.map((c) => (
           <Link
             key={c}
-            href={`/blog/category/${encodeURIComponent(c)}`}
+            href={`/blog/category/${CAT_TO_SLUG[c] || encodeURIComponent(c)}`}
             className="rounded-full bg-panel px-3 py-1 text-xs font-semibold text-primary transition hover:bg-primary hover:text-white"
           >
             {c}
