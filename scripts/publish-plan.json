@@ -1,0 +1,1621 @@
+[
+  {
+    "day": 1,
+    "slot": 4,
+    "slug": "zero-upload-workflow-guide",
+    "title": "零上传工作流：为什么卖家不该把素材传给陌生网站",
+    "category": "隐私合规",
+    "keywords": [
+      "零上传",
+      "数据隐私"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "image-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 2,
+    "slot": 4,
+    "slug": "keyword-analyzer-niche-research",
+    "title": "用关键词分析找细分市场：从搜索词到选品",
+    "category": "选品数据",
+    "keywords": [
+      "选品",
+      "关键词分析"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 3,
+    "slot": 4,
+    "slug": "exif-gps-privacy-leak",
+    "title": "照片里的 GPS 定位泄露：EXIF 隐私清理",
+    "category": "隐私合规",
+    "keywords": [
+      "GPS泄露",
+      "EXIF"
+    ],
+    "tools": [
+      "exif-cleaner",
+      "image-blind-watermark"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 4,
+    "slot": 4,
+    "slug": "cross-store-profit-comparison",
+    "title": "同款在三个平台卖：跨店利润对比定主推",
+    "category": "选品数据",
+    "keywords": [
+      "多平台",
+      "利润对比"
+    ],
+    "tools": [
+      "multi-store-profit",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 5,
+    "slot": 4,
+    "slug": "blind-watermark-source-tracking",
+    "title": "素材泄露溯源：盲水印追责机制",
+    "category": "隐私合规",
+    "keywords": [
+      "盲水印",
+      "溯源"
+    ],
+    "tools": [
+      "image-blind-watermark",
+      "image-watermark"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 6,
+    "slot": 4,
+    "slug": "image-health-listing-conversion",
+    "title": "图片体积影响转化：Listing 健康度排查",
+    "category": "选品数据",
+    "keywords": [
+      "转化率",
+      "图片优化"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 7,
+    "slot": 4,
+    "slug": "local-tools-vs-online-tools",
+    "title": "本地工具 vs 在线工具：处理敏感素材选哪个",
+    "category": "隐私合规",
+    "keywords": [
+      "本地处理",
+      "在线工具"
+    ],
+    "tools": [
+      "image-compress",
+      "pdf-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 8,
+    "slot": 4,
+    "slug": "promo-schedule-timestamps",
+    "title": "促销排期换算：跨时区活动时间不再错",
+    "category": "选品数据",
+    "keywords": [
+      "促销排期",
+      "时区"
+    ],
+    "tools": [
+      "timestamp-convert",
+      "currency-converter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 9,
+    "slot": 4,
+    "slug": "password-and-2fa-setup",
+    "title": "密码 + 双重验证：店铺账号防入侵清单",
+    "category": "隐私合规",
+    "keywords": [
+      "双重验证",
+      "账号安全"
+    ],
+    "tools": [
+      "password-generator",
+      "hash-generator"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 10,
+    "slot": 4,
+    "slug": "long-tail-keyword-mining",
+    "title": "长尾词挖掘实操：小词做大流量",
+    "category": "选品数据",
+    "keywords": [
+      "长尾词",
+      "流量"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "char-counter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 11,
+    "slot": 3,
+    "slug": "separate-voiceover-from-video",
+    "title": "配音与背景音分离处理：视频音轨导出",
+    "category": "音视频",
+    "keywords": [
+      "配音",
+      "音轨"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-trim"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 12,
+    "slot": 4,
+    "slug": "breakeven-point-calculation",
+    "title": "保本点测算：这款产品敢不敢冲量",
+    "category": "选品数据",
+    "keywords": [
+      "保本点",
+      "冲量"
+    ],
+    "tools": [
+      "profit-calculator",
+      "fba-fee-estimator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 13,
+    "slot": 3,
+    "slug": "compress-wav-audio-file",
+    "title": "WAV 太大传不动：压缩成 M4A 不塌音质",
+    "category": "音视频",
+    "keywords": [
+      "WAV压缩",
+      "音频体积"
+    ],
+    "tools": [
+      "audio-convert",
+      "video-compress"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 14,
+    "slot": 4,
+    "slug": "sourcing-cost-currency-check",
+    "title": "采购成本快速折算：人民币报价到美元售价",
+    "category": "选品数据",
+    "keywords": [
+      "采购成本",
+      "汇率换算"
+    ],
+    "tools": [
+      "currency-converter",
+      "profit-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 15,
+    "slot": 3,
+    "slug": "short-audio-assets-production",
+    "title": "短视频 BGM 素材裁剪：循环点怎么选",
+    "category": "音视频",
+    "keywords": [
+      "BGM",
+      "音频素材"
+    ],
+    "tools": [
+      "audio-trim",
+      "audio-convert"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 16,
+    "slot": 4,
+    "slug": "seasonal-keyword-timing",
+    "title": "季节词提前布局：什么时候开始养词",
+    "category": "选品数据",
+    "keywords": [
+      "季节词",
+      "关键词布局"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "timestamp-convert"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 17,
+    "slot": 3,
+    "slug": "interview-audio-extraction",
+    "title": "供应商采访录音提取：开视频会也能留底稿",
+    "category": "音视频",
+    "keywords": [
+      "会议录音",
+      "音频提取"
+    ],
+    "tools": [
+      "video-extract-audio",
+      "audio-convert"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 18,
+    "slot": 4,
+    "slug": "multi-currency-profit-report",
+    "title": "多币种利润报表：把汇率差算进成本",
+    "category": "选品数据",
+    "keywords": [
+      "多币种",
+      "利润报表"
+    ],
+    "tools": [
+      "multi-store-profit",
+      "currency-converter"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 19,
+    "slot": 3,
+    "slug": "batch-audio-conversion-tips",
+    "title": "一批音频逐个转太慢：批量转换工作流",
+    "category": "音视频",
+    "keywords": [
+      "批量转换",
+      "音频处理"
+    ],
+    "tools": [
+      "audio-convert",
+      "audio-trim"
+    ],
+    "type": "compare"
+  },
+  {
+    "day": 20,
+    "slot": 4,
+    "slug": "black-friday-keyword-prep",
+    "title": "黑五关键词备战：大促前的流量词盘点",
+    "category": "选品数据",
+    "keywords": [
+      "黑五",
+      "大促关键词"
+    ],
+    "tools": [
+      "keyword-analyzer",
+      "sensitive-word-check"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 21,
+    "slot": 0,
+    "slug": "video-main-compress-choose",
+    "title": "主图视频太大传不上？本地压缩工具怎么选",
+    "category": "视频营销",
+    "keywords": [
+      "主图视频",
+      "视频压缩",
+      "上传失败"
+    ],
+    "tools": [
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 22,
+    "slot": 0,
+    "slug": "remove-bg-shadow",
+    "title": "白底图去背景后边缘发灰？本地抠图精修",
+    "category": "图片优化",
+    "keywords": [
+      "去背景",
+      "白底图",
+      "抠图"
+    ],
+    "tools": [
+      "image-remove-bg"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 23,
+    "slot": 0,
+    "slug": "video-gif-loop-detail",
+    "title": "详情页视频循环播放：转 GIF 的正确姿势",
+    "category": "视频营销",
+    "keywords": [
+      "视频转GIF",
+      "循环动图",
+      "详情页"
+    ],
+    "tools": [
+      "video-to-gif"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 24,
+    "slot": 0,
+    "slug": "compress-single-fast",
+    "title": "单张图上传太慢？先压缩再传",
+    "category": "图片优化",
+    "keywords": [
+      "图片压缩",
+      "上传速度",
+      "单张"
+    ],
+    "tools": [
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 25,
+    "slot": 0,
+    "slug": "video-merge-unify-params",
+    "title": "多段素材合并不丢画质：合并前先统一参数",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "画质",
+      "参数统一"
+    ],
+    "tools": [
+      "video-merge",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 26,
+    "slot": 0,
+    "slug": "convert-png-webp",
+    "title": "PNG 转 WebP：详情页图片瘦身新方案",
+    "category": "图片优化",
+    "keywords": [
+      "PNG转WebP",
+      "图片格式",
+      "瘦身"
+    ],
+    "tools": [
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 27,
+    "slot": 3,
+    "slug": "wav-m4a-choice",
+    "title": "WAV 还是 M4A：录音格式怎么选",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "WAV",
+      "M4A"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 28,
+    "slot": 0,
+    "slug": "resize-thumbnail",
+    "title": "缩略图统一尺寸：列表页不再参差",
+    "category": "图片优化",
+    "keywords": [
+      "图片缩放",
+      "缩略图",
+      "统一尺寸"
+    ],
+    "tools": [
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 29,
+    "slot": 2,
+    "slug": "bullet-feature-benefit",
+    "title": "五点描述先参数还是先利益：结构对比",
+    "category": "Listing 优化",
+    "keywords": [
+      "五点描述",
+      "利益",
+      "结构"
+    ],
+    "tools": [
+      "bullet-generator"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 30,
+    "slot": 0,
+    "slug": "blind-watermark-tracking",
+    "title": "隐形水印追踪：代理盗图也溯源",
+    "category": "图片优化",
+    "keywords": [
+      "隐形水印",
+      "盗图溯源",
+      "追踪"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 31,
+    "slot": 2,
+    "slug": "sensitive-claim-banned",
+    "title": "这些词一写就下架：违禁词红区",
+    "category": "Listing 优化",
+    "keywords": [
+      "敏感词",
+      "违禁词",
+      "下架"
+    ],
+    "tools": [
+      "sensitive-word-check"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 32,
+    "slot": 0,
+    "slug": "watermark-brand-margin",
+    "title": "批量水印怎么放不挡主体：边角策略",
+    "category": "图片优化",
+    "keywords": [
+      "批量水印",
+      "水印位置",
+      "品牌"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 33,
+    "slot": 3,
+    "slug": "m4a-lossless",
+    "title": "M4A 转无损？格式与音质关系",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "M4A",
+      "无损"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 34,
+    "slot": 0,
+    "slug": "exif-before-upload",
+    "title": "上传前清 EXIF：你的图里有拍摄信息",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF清除",
+      "图片隐私",
+      "上传前"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 35,
+    "slot": 0,
+    "slug": "live-replay-highlight",
+    "title": "直播回放太长：裁剪出高光片段再复用",
+    "category": "视频营销",
+    "keywords": [
+      "直播回放",
+      "高光片段",
+      "视频裁剪"
+    ],
+    "tools": [
+      "video-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 36,
+    "slot": 1,
+    "slug": "vat-eu-country",
+    "title": "欧盟各国 VAT 税率不同：一表对照",
+    "category": "跨境财务",
+    "keywords": [
+      "VAT税率",
+      "欧盟各国",
+      "对照"
+    ],
+    "tools": [
+      "vat-calculator"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 37,
+    "slot": 0,
+    "slug": "multi-platform-video-spec",
+    "title": "不同平台视频规格对照：一次准备全渠道",
+    "category": "视频营销",
+    "keywords": [
+      "视频规格",
+      "平台适配",
+      "分辨率"
+    ],
+    "tools": [
+      "video-convert",
+      "video-resize"
+    ],
+    "type": "listicle"
+  },
+  {
+    "day": 38,
+    "slot": 0,
+    "slug": "size-report-heavy",
+    "title": "图片体积体检：哪张图拖慢详情页",
+    "category": "图片优化",
+    "keywords": [
+      "图片体积",
+      "体检",
+      "页面速度"
+    ],
+    "tools": [
+      "image-size-report"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 39,
+    "slot": 0,
+    "slug": "gif-size-cap",
+    "title": "视频转 GIF 后体积大？两步压到能发",
+    "category": "视频营销",
+    "keywords": [
+      "动图压缩",
+      "GIF体积",
+      "视频转GIF"
+    ],
+    "tools": [
+      "video-to-gif",
+      "video-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 40,
+    "slot": 0,
+    "slug": "rounded-border-social",
+    "title": "社交素材加圆角：不挡内容更精致",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "社交素材",
+      "边框"
+    ],
+    "tools": [
+      "image-rounded-border"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 41,
+    "slot": 0,
+    "slug": "unboxing-frame-detail",
+    "title": "开箱视频里的产品特写：抽帧做详情图",
+    "category": "视频营销",
+    "keywords": [
+      "开箱视频",
+      "抽帧",
+      "详情图"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 42,
+    "slot": 0,
+    "slug": "remove-bg-logo",
+    "title": "Logo 去背景：透明底图的正确做法",
+    "category": "图片优化",
+    "keywords": [
+      "去背景",
+      "Logo",
+      "透明底"
+    ],
+    "tools": [
+      "image-remove-bg",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 43,
+    "slot": 0,
+    "slug": "video-merge-order",
+    "title": "视频合并顺序老错？拖拽排序的讲究",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "排序",
+      "顺序"
+    ],
+    "tools": [
+      "video-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 44,
+    "slot": 0,
+    "slug": "compress-webp-quality",
+    "title": "WebP 压缩画质崩了？质量参数怎么调",
+    "category": "图片优化",
+    "keywords": [
+      "WebP",
+      "压缩画质",
+      "质量参数"
+    ],
+    "tools": [
+      "image-compress",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 45,
+    "slot": 0,
+    "slug": "mov-edit-first",
+    "title": "素材是 MOV 无法编辑？先转 MP4 再动手",
+    "category": "视频营销",
+    "keywords": [
+      "MOV转MP4",
+      "视频格式",
+      "可编辑"
+    ],
+    "tools": [
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 46,
+    "slot": 0,
+    "slug": "convert-heic-web",
+    "title": "HEIC 图片网页不显示？批量转 JPG/WebP",
+    "category": "图片优化",
+    "keywords": [
+      "HEIC转换",
+      "网页兼容",
+      "批量"
+    ],
+    "tools": [
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 47,
+    "slot": 0,
+    "slug": "compress-no-loss",
+    "title": "视频压缩不损画质的秘密：码率与分辨率",
+    "category": "视频营销",
+    "keywords": [
+      "视频压缩",
+      "码率",
+      "分辨率"
+    ],
+    "tools": [
+      "video-compress",
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 48,
+    "slot": 0,
+    "slug": "resize-banner",
+    "title": "Banner 图统一尺寸：多平台不重做",
+    "category": "图片优化",
+    "keywords": [
+      "图片缩放",
+      "Banner",
+      "多平台"
+    ],
+    "tools": [
+      "image-resize",
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 49,
+    "slot": 0,
+    "slug": "frame-compare-image",
+    "title": "详情页视频截关键帧做前后对比图",
+    "category": "视频营销",
+    "keywords": [
+      "抽帧",
+      "对比图",
+      "详情页"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 50,
+    "slot": 0,
+    "slug": "blind-watermark-claims",
+    "title": "原创图隐形标记：被抄袭时举证",
+    "category": "图片优化",
+    "keywords": [
+      "隐形水印",
+      "原创保护",
+      "举证"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 51,
+    "slot": 2,
+    "slug": "density-tool-explained",
+    "title": "关键词密度分析原理：别迷信数字",
+    "category": "Listing 优化",
+    "keywords": [
+      "关键词密度",
+      "原理",
+      "工具"
+    ],
+    "tools": [
+      "keyword-analyzer"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 52,
+    "slot": 0,
+    "slug": "watermark-batch-folders",
+    "title": "批量水印按文件夹处理：一次全站加水印",
+    "category": "图片优化",
+    "keywords": [
+      "批量水印",
+      "文件夹",
+      "批处理"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 53,
+    "slot": 0,
+    "slug": "review-gif-animation",
+    "title": "商品视频转 GIF 放评价区：动态口碑",
+    "category": "视频营销",
+    "keywords": [
+      "评价区动图",
+      "视频转GIF",
+      "口碑"
+    ],
+    "tools": [
+      "video-to-gif"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 54,
+    "slot": 0,
+    "slug": "exif-mac-location",
+    "title": "Mac 拍的图带位置？EXIF 里藏着 GPS",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF",
+      "GPS",
+      "Mac"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 55,
+    "slot": 0,
+    "slug": "vertical-tiktok-material",
+    "title": "竖版视频做 TikTok 素材：裁剪与重排",
+    "category": "视频营销",
+    "keywords": [
+      "TikTok素材",
+      "竖屏视频",
+      "视频裁剪"
+    ],
+    "tools": [
+      "video-trim",
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 56,
+    "slot": 0,
+    "slug": "rename-archive-rules",
+    "title": "图片归档命名规范：三个月后还找得到",
+    "category": "图片优化",
+    "keywords": [
+      "批量改名",
+      "归档",
+      "命名规范"
+    ],
+    "tools": [
+      "image-batch-rename"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 57,
+    "slot": 0,
+    "slug": "slideshow-ad-material",
+    "title": "图片轮播转视频做广告素材：零拍摄成本",
+    "category": "视频营销",
+    "keywords": [
+      "图片转视频",
+      "广告素材",
+      "轮播"
+    ],
+    "tools": [
+      "images-to-video"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 58,
+    "slot": 0,
+    "slug": "size-report-mobile",
+    "title": "移动端图片体积标准：流量就是钱",
+    "category": "图片优化",
+    "keywords": [
+      "图片体积",
+      "移动端",
+      "流量"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 59,
+    "slot": 0,
+    "slug": "export-format-h264",
+    "title": "视频导出格式怎么选：MP4/H.264 详解",
+    "category": "视频营销",
+    "keywords": [
+      "视频格式",
+      "MP4",
+      "H.264"
+    ],
+    "tools": [
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 60,
+    "slot": 0,
+    "slug": "rounded-border-icon",
+    "title": "图标加圆角：产品 UI 素材统一风格",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "图标",
+      "UI素材"
+    ],
+    "tools": [
+      "image-rounded-border"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 61,
+    "slot": 0,
+    "slug": "frame-batch-compress",
+    "title": "抽帧提取图片后批量压缩再上架",
+    "category": "视频营销",
+    "keywords": [
+      "抽帧",
+      "批量压缩",
+      "上架"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 62,
+    "slot": 0,
+    "slug": "remove-bg-person",
+    "title": "模特图去背景：换背景做营销图",
+    "category": "图片优化",
+    "keywords": [
+      "去背景",
+      "模特图",
+      "营销图"
+    ],
+    "tools": [
+      "image-remove-bg"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 63,
+    "slot": 0,
+    "slug": "trim-selling-point",
+    "title": "视频裁剪保留重点：只留卖点片段",
+    "category": "视频营销",
+    "keywords": [
+      "视频裁剪",
+      "卖点",
+      "重点片段"
+    ],
+    "tools": [
+      "video-trim"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 64,
+    "slot": 0,
+    "slug": "compress-batch-50",
+    "title": "50 张图批量压缩：全流程 3 分钟",
+    "category": "图片优化",
+    "keywords": [
+      "批量压缩",
+      "图片压缩",
+      "效率"
+    ],
+    "tools": [
+      "image-compress",
+      "image-size-report"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 65,
+    "slot": 0,
+    "slug": "merge-multi-product",
+    "title": "多产品合并一个展示视频：统一主图视频",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "多产品",
+      "展示视频"
+    ],
+    "tools": [
+      "video-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 66,
+    "slot": 0,
+    "slug": "convert-gif-mp4",
+    "title": "GIF 转 MP4：动图体积大改用视频",
+    "category": "图片优化",
+    "keywords": [
+      "GIF转MP4",
+      "动图",
+      "体积"
+    ],
+    "tools": [
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 67,
+    "slot": 3,
+    "slug": "opus-web",
+    "title": "Opus 格式：网页音频新标准",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "Opus",
+      "网页"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 68,
+    "slot": 0,
+    "slug": "resize-main-image",
+    "title": "主图尺寸不达标？一键缩放到平台要求",
+    "category": "图片优化",
+    "keywords": [
+      "主图尺寸",
+      "图片缩放",
+      "平台要求"
+    ],
+    "tools": [
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 69,
+    "slot": 4,
+    "slug": "blind-watermark-dpi",
+    "title": "盲水印抗截图：清晰度损失",
+    "category": "隐私合规",
+    "keywords": [
+      "隐形水印",
+      "抗截图",
+      "清晰度"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 70,
+    "slot": 0,
+    "slug": "blind-watermark-contract",
+    "title": "合同/报价单隐形水印：防外泄",
+    "category": "图片优化",
+    "keywords": [
+      "隐形水印",
+      "合同",
+      "防外泄"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 71,
+    "slot": 0,
+    "slug": "gif-cs-reply",
+    "title": "视频转 GIF 用于客服快捷回复：一眼看懂",
+    "category": "视频营销",
+    "keywords": [
+      "客服动图",
+      "视频转GIF",
+      "快捷回复"
+    ],
+    "tools": [
+      "video-to-gif"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 72,
+    "slot": 0,
+    "slug": "watermark-repeat-ratio",
+    "title": "批量水印平铺密度：美观与防伪平衡",
+    "category": "图片优化",
+    "keywords": [
+      "批量水印",
+      "平铺",
+      "防伪"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 73,
+    "slot": 0,
+    "slug": "merge-transition",
+    "title": "视频合并加转场：多镜头自然衔接",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "转场",
+      "镜头衔接"
+    ],
+    "tools": [
+      "video-merge"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 74,
+    "slot": 0,
+    "slug": "exif-proof-of-work",
+    "title": "保留 EXIF 自证原创：别急着清",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF",
+      "原创自证",
+      "保留"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 75,
+    "slot": 0,
+    "slug": "frame-use-moment",
+    "title": "截取视频里的产品使用瞬间：做场景图",
+    "category": "视频营销",
+    "keywords": [
+      "抽帧",
+      "使用场景",
+      "产品图"
+    ],
+    "tools": [
+      "video-frame-extract"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 76,
+    "slot": 0,
+    "slug": "rename-before-backup",
+    "title": "改名备份前先做：防误操作",
+    "category": "图片优化",
+    "keywords": [
+      "批量改名",
+      "备份",
+      "防误"
+    ],
+    "tools": [
+      "image-batch-rename"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 77,
+    "slot": 0,
+    "slug": "vertical-whatsapp",
+    "title": "竖屏视频用于 WhatsApp/朋友圈：格式适配",
+    "category": "视频营销",
+    "keywords": [
+      "竖屏视频",
+      "WhatsApp",
+      "格式适配"
+    ],
+    "tools": [
+      "video-resize",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 78,
+    "slot": 0,
+    "slug": "size-report-compress-ratio",
+    "title": "体积报表指导压缩：先看再压更聪明",
+    "category": "图片优化",
+    "keywords": [
+      "图片体积",
+      "压缩比",
+      "报表"
+    ],
+    "tools": [
+      "image-size-report",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 79,
+    "slot": 0,
+    "slug": "images-story-video",
+    "title": "图片生成视频做产品故事：品牌叙事新方式",
+    "category": "视频营销",
+    "keywords": [
+      "图片转视频",
+      "品牌故事",
+      "产品视频"
+    ],
+    "tools": [
+      "images-to-video"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 80,
+    "slot": 0,
+    "slug": "rounded-border-thumb",
+    "title": "缩略图统一圆角：视觉更整齐",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "缩略图",
+      "统一"
+    ],
+    "tools": [
+      "image-rounded-border",
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 81,
+    "slot": 3,
+    "slug": "audio-mono-stereo",
+    "title": "单声道转立体声？适用场景",
+    "category": "音视频",
+    "keywords": [
+      "音频格式",
+      "单声道",
+      "立体声"
+    ],
+    "tools": [
+      "audio-convert"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 82,
+    "slot": 0,
+    "slug": "remove-bg-swatch",
+    "title": "色卡/色板去背景：颜色不失真",
+    "category": "图片优化",
+    "keywords": [
+      "去背景",
+      "色卡",
+      "颜色"
+    ],
+    "tools": [
+      "image-remove-bg"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 83,
+    "slot": 1,
+    "slug": "compress-compressed",
+    "title": "PDF 已经压过还能再压？",
+    "category": "文档处理",
+    "keywords": [
+      "PDF压缩",
+      "二次压缩",
+      "极限"
+    ],
+    "tools": [
+      "pdf-compress"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 84,
+    "slot": 0,
+    "slug": "compress-lossless-check",
+    "title": "无损压缩真无损吗？肉眼对比法",
+    "category": "图片优化",
+    "keywords": [
+      "无损压缩",
+      "图片压缩",
+      "对比"
+    ],
+    "tools": [
+      "image-compress"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 85,
+    "slot": 1,
+    "slug": "split-remove-blank",
+    "title": "PDF 拆出并去掉空白页：打印省纸",
+    "category": "文档处理",
+    "keywords": [
+      "PDF拆分",
+      "空白页",
+      "省纸"
+    ],
+    "tools": [
+      "pdf-split"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 86,
+    "slot": 0,
+    "slug": "convert-svg-png",
+    "title": "SVG 转 PNG：矢量素材网页兼容",
+    "category": "图片优化",
+    "keywords": [
+      "SVG转PNG",
+      "图片格式",
+      "矢量"
+    ],
+    "tools": [
+      "image-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 87,
+    "slot": 0,
+    "slug": "gif-resize-small",
+    "title": "视频转 GIF 压缩循环动图尺寸",
+    "category": "视频营销",
+    "keywords": [
+      "动图尺寸",
+      "视频转GIF",
+      "压缩"
+    ],
+    "tools": [
+      "video-to-gif",
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 88,
+    "slot": 0,
+    "slug": "resize-crop-fill",
+    "title": "缩放裁剪填充：图片不变形的三件套",
+    "category": "图片优化",
+    "keywords": [
+      "图片缩放",
+      "裁剪",
+      "填充"
+    ],
+    "tools": [
+      "image-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 89,
+    "slot": 0,
+    "slug": "frame-aplus-image",
+    "title": "抽帧提取高清产品图做 A+ 页面",
+    "category": "视频营销",
+    "keywords": [
+      "A+页面",
+      "抽帧",
+      "高清产品图"
+    ],
+    "tools": [
+      "video-frame-extract",
+      "image-compress"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 90,
+    "slot": 0,
+    "slug": "blind-watermark-price",
+    "title": "价格敏感图加隐形水印：防截图外传",
+    "category": "图片优化",
+    "keywords": [
+      "隐形水印",
+      "价格图",
+      "防截图"
+    ],
+    "tools": [
+      "image-blind-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 91,
+    "slot": 4,
+    "slug": "hash-cryptographic",
+    "title": "哈希与加密的区别：别混用",
+    "category": "隐私合规",
+    "keywords": [
+      "哈希",
+      "加密",
+      "区别"
+    ],
+    "tools": [
+      "hash-generator"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 92,
+    "slot": 0,
+    "slug": "watermark-legal-text",
+    "title": "图片角落加水印文字：版权声明",
+    "category": "图片优化",
+    "keywords": [
+      "批量水印",
+      "版权声明",
+      "文字水印"
+    ],
+    "tools": [
+      "image-watermark"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 93,
+    "slot": 1,
+    "slug": "compress-quality-check",
+    "title": "压缩后 PDF 能看清吗？验收三看",
+    "category": "文档处理",
+    "keywords": [
+      "PDF压缩",
+      "质量",
+      "验收"
+    ],
+    "tools": [
+      "pdf-compress"
+    ],
+    "type": "review"
+  },
+  {
+    "day": 94,
+    "slot": 0,
+    "slug": "exif-consignment",
+    "title": "代发货物料先清 EXIF：保护仓库信息",
+    "category": "图片优化",
+    "keywords": [
+      "EXIF",
+      "代发货",
+      "信息保护"
+    ],
+    "tools": [
+      "exif-cleaner"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 95,
+    "slot": 0,
+    "slug": "resize-keep-aspect",
+    "title": "视频分辨率调整保持宽高比：不变形",
+    "category": "视频营销",
+    "keywords": [
+      "视频分辨率",
+      "宽高比",
+      "不变形"
+    ],
+    "tools": [
+      "video-resize"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 96,
+    "slot": 0,
+    "slug": "rename-by-date-session",
+    "title": "按日期/批次命名图片：拍摄管理",
+    "category": "图片优化",
+    "keywords": [
+      "批量改名",
+      "日期",
+      "批次"
+    ],
+    "tools": [
+      "image-batch-rename"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 97,
+    "slot": 0,
+    "slug": "images-to-video-bgm",
+    "title": "多张图片转视频配背景音乐：产品氛围片",
+    "category": "视频营销",
+    "keywords": [
+      "图片转视频",
+      "背景音乐",
+      "氛围片"
+    ],
+    "tools": [
+      "images-to-video"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 98,
+    "slot": 1,
+    "slug": "return-asin-level",
+    "title": "单 ASIN 退货率：低于多少才健康",
+    "category": "跨境财务",
+    "keywords": [
+      "退货率",
+      "ASIN",
+      "健康线"
+    ],
+    "tools": [
+      "return-cost-calculator"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 99,
+    "slot": 0,
+    "slug": "merge-unify-fps",
+    "title": "视频合并前统一帧率与码率：避免忽快忽慢",
+    "category": "视频营销",
+    "keywords": [
+      "视频合并",
+      "帧率",
+      "码率"
+    ],
+    "tools": [
+      "video-merge",
+      "video-convert"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "day": 100,
+    "slot": 0,
+    "slug": "rounded-border-before-after",
+    "title": "圆角边框做前后对比：设计感提升",
+    "category": "图片优化",
+    "keywords": [
+      "圆角图片",
+      "对比",
+      "设计感"
+    ],
+    "tools": [
+      "image-rounded-border"
+    ],
+    "type": "tutorial"
+  }
+]
