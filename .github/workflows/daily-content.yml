@@ -3,17 +3,17 @@ name: Daily Content (crosstool 100-day pipeline)
 on:
   schedule:
     # 白天时间安排表：北京 09:00 / 11:00 / 14:00 / 16:00 / 18:00（= UTC 01/03/06/08/10）
-    # 每天 5 个时段各发 1 篇，覆盖 5 个不同分类（1 天 1 分类 1 篇）
-    - cron: "0 1 * * *"  # UTC 01:00 = 北京 09:00
-    - cron: "0 3 * * *"  # UTC 03:00 = 北京 11:00
-    - cron: "0 6 * * *"  # UTC 06:00 = 北京 14:00
-    - cron: "0 8 * * *"  # UTC 08:00 = 北京 16:00
-    - cron: "0 10 * * *" # UTC 10:00 = 北京 18:00
+    # 每天 5 个时段各发 1 篇：02:10 自动化已把当天 5 篇写稿存入 content/queue/{日期}-slot-{0..4}.json
+    # 每个 cron 按当前时段发布对应队列稿（无队列稿则 no-op）
+    - cron: "0 1 * * *"  # UTC 01:00 = 北京 09:00 → slot 0
+    - cron: "0 3 * * *"  # UTC 03:00 = 北京 11:00 → slot 1
+    - cron: "0 6 * * *"  # UTC 06:00 = 北京 14:00 → slot 2
+    - cron: "0 8 * * *"  # UTC 08:00 = 北京 16:00 → slot 3
+    - cron: "0 10 * * *" # UTC 10:00 = 北京 18:00 → slot 4
   workflow_dispatch:
     inputs:
-      day: { description: "指定日历 day（留空=自动找下一个）", required: false }
-      slot: { description: "指定当天 slot 0-4（留空=当天第一个未发布）", required: false }
-      dry_run: { description: "只校验不生成", type: boolean, default: false }
+      date: { description: "指定队列日期 YYYY-MM-DD（留空=今天 Asia/Shanghai）", required: false }
+      slot: { description: "指定 slot 0-4（留空=按当前时段推导）", required: false }
 
 permissions:
   contents: write
@@ -21,7 +21,7 @@ permissions:
 jobs:
   daily:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with: { token: "${{ secrets.GITHUB_TOKEN }}", fetch-depth: 0 }
@@ -29,22 +29,16 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
 
-      - name: Install deps (for tsc validation)
-        run: npm install --no-audit --no-fund
-
-      - name: Layer 1 - generate daily post
-        id: gen
-        env:
-          DASHSCOPE_API_KEY: "${{ secrets.DASHSCOPE_API_KEY }}"
+      - name: Layer 1 - publish queued post for current slot
+        id: pub
         run: |
           ARGS=""
-          if [ -n "${{ inputs.day }}" ]; then ARGS="$ARGS --day ${{ inputs.day }}"; fi
+          if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
           if [ -n "${{ inputs.slot }}" ]; then ARGS="$ARGS --slot ${{ inputs.slot }}"; fi
-          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
-          node scripts/fetch-content-daily.mjs $ARGS
+          node scripts/publish-queued.mjs $ARGS
 
       - name: Layer 2 - push via Git Data API
-        if: steps.gen.outputs.pushed == '1'
+        if: steps.pub.outputs.pushed == '1'
         env:
           GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
@@ -53,13 +47,14 @@ jobs:
             --repo "${{ github.event.repository.name }}" \
             --branch main \
             --token "$GH_TOKEN" \
-            --message "auto: daily blog post $(date -u +%Y-%m-%d)"
+            --files "content/blog.daily.json ${{ steps.pub.outputs.queue_file }}" \
+            --message "auto: publish queued post $(date -u +%Y-%m-%d) slot ${{ steps.pub.outputs.slot }}"
 
       - name: Layer 3 - IndexNow submit
-        if: steps.gen.outputs.pushed == '1'
+        if: steps.pub.outputs.pushed == '1'
         run: |
           node scripts/indexnow-submit.mjs \
             --host crosstool.online \
             --key "${{ secrets.INDEXNOW_KEY }}" \
-            --urls "${{ steps.gen.outputs.new_url }}" \
+            --urls "${{ steps.pub.outputs.new_url }}" \
             --quiet
