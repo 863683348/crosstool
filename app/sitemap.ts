@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { TOOLS } from '@/lib/tools';
-import { blogPosts } from '@/content/blog';
+import { blogPosts, CATEGORY_SLUGS } from '@/content/blog';
 
 const SITE = 'https://crosstool.online';
 
@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const p of blogPosts) {
     urls.push({ url: SITE + '/blog/' + p.slug, changeFrequency: 'monthly', priority: 0.7 });
+  }
+  for (const slug of Object.keys(CATEGORY_SLUGS)) {
+    urls.push({ url: SITE + '/blog/category/' + slug, changeFrequency: 'weekly', priority: 0.6 });
   }
   return urls;
 }
