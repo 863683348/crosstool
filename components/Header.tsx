@@ -12,15 +12,26 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-panel/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold">
-          <span
-            className="grid h-8 w-8 place-items-center rounded-lg text-primary-text"
-            style={{ background: 'linear-gradient(135deg, var(--primary), #06b6d4)' }}
-          >
-            C
-          </span>
-          <span className="text-lg">{t('brand')}</span>
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 font-bold">
+            <span
+              className="grid h-8 w-8 place-items-center rounded-lg text-primary-text"
+              style={{ background: 'linear-gradient(135deg, var(--primary), #06b6d4)' }}
+            >
+              C
+            </span>
+            <span className="text-lg">{t('brand')}</span>
+          </Link>
+
+          <nav className="flex items-center gap-1">
+            <Link
+              href="/blog"
+              className="rounded-lg px-3 py-1.5 text-sm font-medium text-text transition hover:bg-panel hover:text-primary-text"
+            >
+              {t('navBlog')}
+            </Link>
+          </nav>
+        </div>
 
         <div className="flex items-center gap-2">
           <span className="hidden rounded-full border border-ok/40 bg-ok/10 px-3 py-1 text-xs font-semibold text-ok sm:inline">

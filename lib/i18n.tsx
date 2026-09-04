@@ -11,6 +11,7 @@ export const ZH: Dict = {
   privacyBadge: '🔒 全程本地处理 · 文件不上传',
   navHome: '首页',
   navTools: '全部工具',
+  navBlog: '博客',
   seoH1: 'CrossTool · 跨境卖家本地隐私工具箱 — 120+ 本地工具（PDF/图片/账号/财务/Listing/视频/数据/合规/SEO/效率），100% 浏览器内处理，零上传',
 
   // 首页
@@ -478,6 +479,7 @@ export const EN: Dict = {
   privacyBadge: '🔒 Processed locally · never uploaded',
   navHome: 'Home',
   navTools: 'All tools',
+  navBlog: 'Blog',
   seoH1: 'CrossTool · Local & private toolbox for cross-border sellers — 120+ local tools (PDF / image / account / finance / listing / video / data / compliance / SEO / productivity), 100% in-browser, zero upload',
 
   homeSub:
