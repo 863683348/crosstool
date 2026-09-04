@@ -67,7 +67,7 @@ export default function ProfitCalculatorClient() {
         </div>
       </div>
 
-      <div className="mt-4 rounded-card border border-primary/30 bg-primary-soft p-4 text-center">
+      <div className="mt-4 rounded-card border border-primary-border bg-primary-soft p-4 text-center">
         <div className="text-xs text-muted">{t('profitNet')}</div>
         <div className={`text-2xl font-bold ${profit >= 0 ? 'text-ok' : 'text-warn'}`}>{profit.toFixed(2)}</div>
         <div className="text-xs text-muted">{t('profitMargin')}: {margin.toFixed(1)}%</div>

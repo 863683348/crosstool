@@ -267,7 +267,7 @@ export default function ImageCompressClient() {
       </div>
 
       {doneItems.length > 0 && (
-        <div className="mt-3 flex flex-wrap items-center gap-3 rounded-card border border-primary/30 bg-primary-soft px-4 py-3 text-sm">
+        <div className="mt-3 flex flex-wrap items-center gap-3 rounded-card border border-primary-border bg-primary-soft px-4 py-3 text-sm">
           <span>
             {t('original')}: <b>{fmtSize(totalOrig)}</b>
           </span>

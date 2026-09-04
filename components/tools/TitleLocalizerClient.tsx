@@ -112,7 +112,7 @@ export default function TitleLocalizerClient() {
       )}
 
       {preview && preview !== title && (
-        <div className="mt-3 rounded-card border border-ok/30 bg-ok/10 p-3 text-sm">
+        <div className="mt-3 rounded-card border border-ok-border-30 bg-ok-soft p-3 text-sm">
           <div className="mb-1 font-semibold text-muted">{t('titleLocPreview')}</div>
           <div className="break-words">{preview}</div>
         </div>

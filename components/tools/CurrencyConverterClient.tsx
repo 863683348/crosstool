@@ -72,7 +72,7 @@ export default function CurrencyConverterClient() {
         </div>
       </div>
 
-      <div className="mt-4 rounded-card border border-primary/30 bg-primary-soft p-4 text-center">
+      <div className="mt-4 rounded-card border border-primary-border bg-primary-soft p-4 text-center">
         <div className="text-xs text-muted">{t('curResult')}</div>
         <div className="text-2xl font-bold text-primary">
           {result.toLocaleString(undefined, { maximumFractionDigits: 2 })} {to}

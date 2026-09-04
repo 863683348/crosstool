@@ -10,7 +10,7 @@ export default function Header() {
   const { theme, toggle } = useTheme();
 
   return (
-    <header className="sticky top-0 z-30 border-b border-border bg-panel/80 backdrop-blur">
+    <header className="sticky top-0 z-30 border-b border-border bg-panel-80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-2 font-bold">
@@ -34,7 +34,7 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="hidden rounded-full border border-ok/40 bg-ok/10 px-3 py-1 text-xs font-semibold text-ok sm:inline">
+          <span className="hidden rounded-full border border-ok-border bg-ok-soft px-3 py-1 text-xs font-semibold text-ok sm:inline">
             {t('privacyBadge')}
           </span>
           <button

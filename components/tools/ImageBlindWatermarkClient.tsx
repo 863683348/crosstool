@@ -130,7 +130,7 @@ export default function ImageBlindWatermarkClient() {
             </div>
           )}
           {extracted && (
-            <div className="rounded-card border border-ok/30 bg-ok/10 p-3 text-sm">
+            <div className="rounded-card border border-ok-border-30 bg-ok-soft p-3 text-sm">
               <div className="mb-1 font-semibold text-muted">{t('imgBlindResult')}</div>
               <div className="break-all font-mono">{extracted}</div>
             </div>

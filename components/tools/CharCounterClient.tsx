@@ -33,7 +33,7 @@ export default function CharCounterClient() {
           const over = count > l.max;
           const pct = Math.min(100, (count / l.max) * 100);
           return (
-            <div key={l.key} className={`rounded-card border p-3 shadow-card ${over ? 'border-warn/40 bg-warn/10' : 'border-border bg-panel'}`}>
+            <div key={l.key} className={`rounded-card border p-3 shadow-card ${over ? 'border-warn-border bg-warn-soft' : 'border-border bg-panel'}`}>
               <div className="text-xs text-muted">{t(l.key)}</div>
               <div className={`text-lg font-bold ${over ? 'text-warn' : 'text-ok'}`}>
                 {count}/{l.max}

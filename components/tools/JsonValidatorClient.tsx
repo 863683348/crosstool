@@ -47,7 +47,7 @@ export default function JsonValidatorClient() {
       </button>
 
       {msg && (
-        <div className={`mt-3 rounded-card border p-3 text-sm ${msg.ok ? 'border-ok/40 bg-ok/10 text-ok' : 'border-warn/40 bg-warn/10 text-warn'}`}>
+        <div className={`mt-3 rounded-card border p-3 text-sm ${msg.ok ? 'border-ok-border bg-ok-soft text-ok' : 'border-warn-border bg-warn-soft text-warn'}`}>
           {msg.ok ? t('jsonValOk') : t('jsonValFail') + (msg.line > 0 ? ` (${t('jsonValLine')} ${msg.line})` : '')}
         </div>
       )}

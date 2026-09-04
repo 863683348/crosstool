@@ -15,6 +15,14 @@
   --warn: #dc2626;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.05);
   --radius: 14px;
+  /* 半透明语义色（Tailwind 无法对 var() 生成 /opacity 变体，改用预定义 alpha 色） */
+  --panel-80: #ffffffcc;
+  --ok-soft: #16a34a1a;
+  --ok-border: #16a34a66;
+  --ok-border-30: #16a34a4d;
+  --warn-soft: #dc26261a;
+  --warn-border: #dc262666;
+  --primary-border: #4f46e54d;
 }
 
 [data-theme='dark'] {
@@ -29,6 +37,14 @@
   --ok: #4ade80;
   --warn: #f87171;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  /* 半透明语义色（深色主题） */
+  --panel-80: #171a21cc;
+  --ok-soft: #4ade801a;
+  --ok-border: #4ade8066;
+  --ok-border-30: #4ade804d;
+  --warn-soft: #f871711a;
+  --warn-border: #f8717166;
+  --primary-border: #818cf84d;
 }
 
 * {

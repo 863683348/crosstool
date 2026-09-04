@@ -66,7 +66,7 @@ export default function HomePage() {
       <h1 className="sr-only">{t('seoH1')}</h1>
 
       <section className="mb-6 text-center">
-        <div className="mx-auto mb-3 inline-flex items-center gap-2 rounded-full border border-ok/40 bg-ok/10 px-3 py-1 text-xs font-semibold text-ok">
+        <div className="mx-auto mb-3 inline-flex items-center gap-2 rounded-full border border-ok-border bg-ok-soft px-3 py-1 text-xs font-semibold text-ok">
           <ShieldCheck size={14} /> {t('privacyBadge')}
         </div>
         <h2 className="text-2xl font-bold sm:text-3xl">{t('tagline')}</h2>
