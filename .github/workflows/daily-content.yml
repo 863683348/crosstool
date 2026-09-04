@@ -11,6 +11,7 @@ on:
     - cron: "0 8 * * *"  # UTC 08:00 = 北京 16:00 → slot 3
     - cron: "0 10 * * *" # UTC 10:00 = 北京 18:00 → slot 4
     - cron: "0 12 * * *" # UTC 12:00 = 北京 20:00 → catchup 兜底：补发当天未发布的 slot（白天 cron 偶发漏发时兜底）
+    - cron: "0 23 * * *" # UTC 23:00 = 北京 07:00 → 昨日核验兜底：补发昨天未发布的 slot（白天 cron + 20:00 兜底都漏跑时兜底）
   workflow_dispatch:
     inputs:
       date: { description: "指定队列日期 YYYY-MM-DD（留空=今天 Asia/Shanghai）", required: false }

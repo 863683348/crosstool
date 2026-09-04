@@ -5,18 +5,20 @@
  * 机制：02:10 automation 每日把 5 篇写稿存为 content/queue/{日期}-slot-{0..4}.json 并推送到仓库；
  *       GitHub Actions 5 个白天 cron（北京 09/11/14/16/18）各自调用本脚本发布 1 篇对应时段的队列稿。
  *       发布 = 校验通过 → 追加 content/blog.daily.json → 队列文件标记 consumed（Layer 2 一起推回仓库）。
- *       兜底：北京 20:00（UTC 12:00）cron 无参调用本脚本 → 自动进入 catchup 模式，
- *             把当天 5 个 slot 中尚未发布的队列稿全部补发（白天 cron 偶发漏发时兜底）。
+ *       兜底 1：北京 20:00（UTC 12:00）cron 无参调用本脚本 → 自动 catchup 今天，
+ *               把当天 5 个 slot 中尚未发布的队列稿全部补发（白天 cron 偶发漏发时兜底）。
+ *       兜底 2：北京 07:00（UTC 23:00）cron 无参调用本脚本 → 自动 catchup 昨天（昨日核验），
+ *               补发昨天未发布的队列稿（白天 cron + 20:00 兜底都漏跑时兜底，双保险）。
  *
  * 用法：
- *   node scripts/publish-queued.mjs                          # 自动：UTC 12→catchup，其余→当前时段 slot
- *   node scripts/publish-queued.mjs --catchup [--date 2026-09-04]   # 显式补发当天全部未发布 slot
+ *   node scripts/publish-queued.mjs                          # 自动：UTC 12→今日catchup / UTC 23→昨日catchup / 其余→当前时段 slot
+ *   node scripts/publish-queued.mjs --catchup [--date 2026-09-04]   # 显式补发指定日期全部未发布 slot
  *   node scripts/publish-queued.mjs --date 2026-09-04        # 指定日期（默认今天）
  *   node scripts/publish-queued.mjs --date 2026-09-04 --slot 2
  *   node scripts/publish-queued.mjs --dry-run                # 只读不写盘
  *
  * slot 由当前 UTC 小时推导（与 workflow cron 对齐）：
- *   UTC 01→slot0(北京09)  03→slot1(11)  06→slot2(14)  08→slot3(16)  10→slot4(18)  12→catchup(20:00)
+ *   UTC 01→slot0(北京09)  03→slot1(11)  06→slot2(14)  08→slot3(16)  10→slot4(18)  12→今日catchup(20:00)  23→昨日catchup(07:00)
  *
  * 输出 GITHUB_OUTPUT：pushed=1/0, new_url/new_urls, slug, day, slot, queue_file/queue_files, label
  * 退出码：0=成功/无队列稿/跳过  1=校验失败或 catchup 有失败  2=其他错误
@@ -46,6 +48,13 @@ function todayCN() {
   return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Shanghai' }).format(new Date());
 }
 
+// ---------- 昨天日期（Asia/Shanghai，边界安全：月末/年末自动进位） ----------
+function yesterdayCN() {
+  const [y, m, d] = todayCN().split('-').map(Number);
+  const prev = new Date(Date.UTC(y, m - 1, d - 1));
+  return prev.toISOString().slice(0, 10);
+}
+
 // ---------- 当前 slot（按 UTC 小时推导，与 cron 对齐） ----------
 function slotFromNow() {
   const h = new Date().getUTCHours();
@@ -55,8 +64,15 @@ function slotFromNow() {
   return best[1];
 }
 
-// 北京 20:00（UTC 12:00）= 当天全部白天时段已过，进入 catchup 兜底
-const isCatchupHour = () => new Date().getUTCHours() === 12;
+// 无参调用时的自动模式（与 workflow cron 对齐）：
+//   UTC 12（北京 20:00）= 当天全部白天时段已过 → catchup 今天
+//   UTC 23（北京 07:00）= 新一天开始前 → 昨日核验：catchup 昨天（补昨天漏发，兜底 cron 整天不触发）
+function autoMode() {
+  const h = new Date().getUTCHours();
+  if (h === 12) return { catchup: true, date: todayCN(), label: '今日 catchup（20:00 兜底）' };
+  if (h === 23) return { catchup: true, date: yesterdayCN(), label: '昨日核验 catchup（07:00 兜底）' };
+  return { catchup: false, date: todayCN(), label: '' };
+}
 
 // ---------- 活工具 slug + 中文标题 ----------
 function loadLiveTools() {
@@ -192,8 +208,13 @@ function runCatchup(date) {
 // ---------- 主流程 ----------
 function main() {
   const date = argVal('date') || todayCN();
-  const catchup = args.includes('--catchup') || (args.length === 0 && isCatchupHour());
-  if (catchup) return runCatchup(date);
+  const explicitCatchup = args.includes('--catchup');
+  if (explicitCatchup) return runCatchup(date);
+  const auto = autoMode();
+  if (auto.catchup) {
+    console.log(`[${now()}] ${auto.label} → date=${auto.date}`);
+    return runCatchup(auto.date);
+  }
   const slot = argVal('slot') != null ? parseInt(argVal('slot'), 10) : slotFromNow();
   return runSingle(date, slot);
 }
