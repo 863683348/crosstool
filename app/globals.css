@@ -88,3 +88,93 @@ a {
     font-size: 16px;
   }
 }
+
+/* —— 通用工具运行器：预览 / 代码 / Markdown / 调色板 —— */
+.ct-code {
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin: 0;
+}
+.ct-serp {
+  max-width: 600px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.ct-serp-title {
+  color: #1a0dab;
+  font-size: 18px;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ct-serp-url {
+  color: #006621;
+  font-size: 13px;
+  margin: 2px 0;
+}
+.ct-serp-desc {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.ct-md h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.ct-md h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.ct-md p {
+  margin: 8px 0;
+}
+.ct-md ul {
+  margin: 8px 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+.ct-md-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.ct-md-table th,
+.ct-md-table td {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  text-align: left;
+}
+.ct-md-table th {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.ct-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+.ct-swatch {
+  height: 80px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+}
