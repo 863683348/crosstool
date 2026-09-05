@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { Sun, Moon, Globe } from 'lucide-react';
 import { useT } from '@/lib/i18n';
 import { useTheme } from '@/lib/theme';
@@ -8,6 +9,23 @@ import { useTheme } from '@/lib/theme';
 export default function Header() {
   const { t, lang, setLang } = useT();
   const { theme, toggle } = useTheme();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // Blog 是独立双语路由（/blog 中文、/blog/en 英文）：切语言时按路径跳转对应版本
+  const toggleLang = () => {
+    const next = lang === 'zh' ? 'en' : 'zh';
+    setLang(next);
+    if (pathname === '/blog' || pathname.startsWith('/blog/')) {
+      let target: string;
+      if (pathname === '/blog/en') target = '/blog';
+      else if (pathname === '/blog') target = '/blog/en';
+      else if (pathname.startsWith('/blog/en/'))
+        target = pathname.replace(/^\/blog\/en/, '/blog');
+      else target = pathname.replace(/^\/blog/, '/blog/en');
+      router.push(target);
+    }
+  };
 
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-panel-80 backdrop-blur">
@@ -39,8 +57,8 @@ export default function Header() {
           </span>
           <button
             className="grid h-9 w-9 place-items-center rounded-lg border border-border bg-panel text-text transition hover:border-primary"
-            onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')}
-            title={t('navTools')}
+            onClick={toggleLang}
+            title={lang === 'zh' ? 'English' : '中文'}
           >
             <Globe size={16} />
             <span className="sr-only">lang</span>
