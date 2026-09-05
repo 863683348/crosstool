@@ -1,6 +1,14 @@
 [
   {
     "slug": "amazon-main-video-size-limit",
+    "titleEn": "Amazon Main Video Over the Size Limit? Three Quality Levels to Get Compliant",
+    "excerptEn": "Main video over 100MB and rejected on upload? Compress in three quality tiers locally - the file never leaves your browser and your sourcing material stays safe.",
+    "bodyEn": [
+      "Amazon sets a soft size ceiling on main product videos, and phone footage routinely comes out at 100MB+. Half the time the upload just fails. Rather than re-uploading again and again, compress once before you list.",
+      "Compression is a trade-off between resolution and quality tier: 720p at medium quality balances detail-page looks and file size. If your source is 1080p at high bitrate, dropping to 720p usually cuts the size by more than half.",
+      "Do it with a local video compressor running in the browser on ffmpeg - the file never leaves your device. Product videos often contain unpublished sourcing and sample footage, and zero upload means zero leak risk.",
+      "If the result isn't MP4 (H.264), normalize it with a format converter for the widest compatibility. Both steps together usually take under a minute."
+    ],
     "title": "亚马逊主图视频体积超限？三档画质压到合规区间",
     "date": "2026-09-03",
     "type": "tutorial",
@@ -32,6 +40,16 @@
   },
   {
     "slug": "watermark-brand-margin",
+    "titleEn": "Where to Place Batch Watermarks So They Don't Cover the Product",
+    "excerptEn": "Batch-watermarking product photos usually fails when the mark buries the selling point or logo. Use the corner strategy: bottom-right whitespace, semi-transparent, size scaling with the image. All local, zero upload.",
+    "bodyEn": [
+      "Anyone who sells cross-border knows images get lifted all the time. A watermark deters some of it, but a badly placed one ruins your own main image - the buyer sees your watermark before they see the product. So batch watermarking isn't about whether, it's about where, how big and how transparent.",
+      "From what we've run, corners first. The bottom-right is usually the safest spot because most product subjects sit centered or slightly left, leaving the most whitespace there. Put your brand or store name there and it reads as a claim without fighting the selling points. Top-left works too, but watch your composition - don't sit on the logo or the key selling point.",
+      "Don't crank the opacity. Beginners grab solid black bold text and end up stamping the whole image. Keep opacity around 25-40% and font size around 4-6% of the image's short side. Small images shouldn't use big type or the mark outshines the product. A consistent parameter set keeps the whole store looking uniform.",
+      "Mind the text too. Don't write sentences - just the brand or store name plus a copyright symbol. Long watermarks turn into a smear of noise in thumbnails and look unprofessional. If you need channel variants, use a suffix like AMZ or TK but keep position and size identical.",
+      "The critical bit: do all of it in your local browser and never send images to a third-party server. The thing cross-border sellers fear most is leaking unlisted sourcing photos before launch - a competitor can beat you to market with your own image. Process with a local tool and download straight: zero upload, zero retention. Don't break that line.",
+      "One thing people skip: a watermark is theft-deterrent, not theft-proof. It won't stop screenshots or re-photography - your real moat is trademark registration and keeping original image evidence. A watermark is just the cheap first reminder. Master the corner strategy and everyday listing gets a lot smoother."
+    ],
     "title": "批量水印怎么放不挡主体：边角策略",
     "date": "2026-09-03",
     "type": "tutorial",
@@ -62,6 +80,16 @@
   },
   {
     "slug": "sensitive-claim-banned",
+    "titleEn": "Words That Get Your Listing Suppressed: The Banned-Word Red Zone",
+    "excerptEn": "Platforms are tightening on superlatives and efficacy claims, and a few common words trip reviews instantly. Scan with a local tool before listing - material never leaves the browser - and fix red-zone words first.",
+    "bodyEn": [
+      "Every cross-border seller has hit the review trap: perfectly normal copy, then the link suddenly gets throttled or suppressed with nothing but \"policy violation\" and no clue which sentence did it. Most triggers cluster around a handful of words - knowing them up front is cheaper than rescuing a listing afterward.",
+      "First: superlatives. Words like best, #1, first, and \"national-level\" are high-risk in many categories. Not always outright banned, but once a competitor reports you or the system scans it, appeal success is low. Write \"suitable for everyday use\" instead of \"the best on the market\" and let buyers judge for themselves.",
+      "Second: efficacy and medical implications. Beauty, supplements and baby categories are the most sensitive - \"whitening\", \"treatment\", \"cure\" and \"anti-epidemic\" type wording easily crosses the line, especially around infants. These words aren't untouchable; they just belong in a compliant claims register on the product page, not stuffed into the title and main image.",
+      "Third: infringement and trademark-adjacent. Writing a major brand, anime character or landmark logo into copy or images is basically volunteering for a takedown. Implied wording like \"same as X\" or \"budget version of Y\" is also under scrutiny. If someone else's mark shows up in your own material, strip it before listing.",
+      "The easiest one to miss is cultural landmines. Phrasing that's normal at home can brush against religious, ethnic or political lines in your target market - you can't see it, but a local team or a buyer will report it instantly. Before going live in another language, have a native speaker review the copy; don't trust machine translation alone.",
+      "Operationally: run your title, bullets and description copy through a sensitive-word scan before listing - far cheaper than rescuing a suppressed link. The local scanner works in the browser, so the text never leaves the device and your unlisted sourcing words stay safe. Fix what it flags red first and your approval rate climbs noticeably."
+    ],
     "title": "这些词一写就下架：违禁词红区",
     "date": "2026-09-03",
     "type": "listicle",
@@ -91,6 +119,16 @@
   },
   {
     "slug": "qr-wifi-share",
+    "titleEn": "Office WiFi QR Code: Guests Connect Without the Password",
+    "excerptEn": "Warehouse and office visitors ask for the WiFi password all day, and typing long ones invites errors. Bake the WiFi details into a QR code - guests scan and connect instantly, generated locally through no platform, password never leaks.",
+    "bodyEn": [
+      "Suppliers, couriers, temp staff - a cross-border seller's warehouse, live-room and office see visitors all day. Every one asks for the password; long passwords get mistyped and we start over. So I made a WiFi QR code and stuck it by the door. Scan, connect, done. Saves a surprising amount of hassle.",
+      "It's not complicated: put the network name, password and encryption type into the QR content in the standard format, generate the code and print it. Phones recognize this kind of code, pop up a prompt, and connect on tap - no one types that long awkward string anymore.",
+      "Worried the QR exposes the password? Think about it the other way: when the password sat on paper, anyone could photograph it too. A QR code just makes the info machine-readable. The real question is where you generate it - fill your password into a random online tool and you don't know if it's stored or transmitted.",
+      "I generate locally: from typing the password to the code appearing, everything stays in the browser, no upload. In a busy office that means the password stays known only to the people who should know it, instead of being quietly recorded by some platform because of one scan.",
+      "One tip: high-traffic spaces can run a dedicated guest network, isolated from the office network. Grant the least access you can. The QR code is convenience; security still rides on network segmentation.",
+      "This is especially handy for offline cross-border teams - on selection-meeting days, promotion days and live-stream days when visitors pile up, one printed code saves enough explanation time to close two more deals."
+    ],
     "title": "办公室 WiFi 二维码：访客免输密码",
     "date": "2026-09-04",
     "type": "tutorial",
@@ -121,6 +159,16 @@
   },
   {
     "slug": "currency-cost-quote",
+    "titleEn": "Purchase Quote Conversion: From RMB to Your Real USD Cost",
+    "excerptEn": "Your supplier quotes in RMB but you price in USD. Skip the conversion and your margin math is fiction. Convert each quote to a per-unit USD cost at the current rate so pricing never loses money.",
+    "bodyEn": [
+      "The easiest way to wreck your sourcing math is treating the supplier's RMB quote as your cost. Domestic suppliers quote in RMB, but your selling price, platform fees and profit all live in USD. Skip that conversion and your margin percentage is built on air.",
+      "My routine is fixed: take the quote, pull out the per-unit price and MOQ, convert at the current rate to USD, add first-leg freight and platform commissions as fixed items, and get a per-unit USD total cost. That number is the floor of my pricing - anything below it doesn't get made.",
+      "Don't use a round number, and definitely don't use the exchange rate you remember from memory. Rates move daily - convert on the day of the quote with that day's rate, then re-check in a few days. If the same batch drags on, build possible rate movement into the buffer.",
+      "People call this overkill and say \"close enough.\" It's not. Cross-border margins are thin to begin with - one percentage point of FX on a few thousand units is real money. Once conversion became muscle memory I stopped doing jobs and discovering the price was wrong at the end.",
+      "I do all of this with local tools: paste in the quote and the rate, get USD cost and per-unit margin instantly, without pasting price data into some online page. A quote sheet is business-sensitive information in this circle - keep it local where it belongs.",
+      "Bottom line: sourcing in RMB, selling in USD, and the bridge between them has to be real. Push conversion forward into the sourcing-scoring stage and every decision after it gets solid."
+    ],
     "title": "采购报价换算：人民币到美元成本",
     "date": "2026-09-04",
     "type": "tutorial",
@@ -151,6 +199,16 @@
   },
   {
     "slug": "currency-forward",
+    "titleEn": "How to Think About Locking Exchange Rates: Calculate the Gap Before You Settle",
+    "excerptEn": "Settlement rates move daily - your books say profit but converting back can shrink it. Before locking, work out the rate gap clearly, then decide whether to lock and how much. It saves you expensive tuition.",
+    "bodyEn": [
+      "I got burned once: the per-order margin was crystal clear, then the rate dropped by settlement day and I took home less than expected. Ever since, before settling, I pull out the current rate and my cost rate and compare them before deciding how to convert the money.",
+      "Watching the quoted rate is useless - what matters is your \"cost rate\": the rate you used when you priced, versus the rate you convert at when settling. Subtract the two; that gap is what actually decides whether this order made or lost money.",
+      "I take a batch of funds about to settle and weight it: how much USD lands this week, how much it converts to at today's rate, and how many points off my cost rate that is. Small gap, I just settle. Big gap, I consider splitting or waiting instead of converting everything at once.",
+      "People over-mystify forward contracts. The idea is simple: lock a rate now, and whatever the market does, you transact at that locked price. It suits large amounts, long cycles, and deals where you don't want to bet on direction. Conversely, small frequent settlements shouldn't bother - fees can exceed the FX gap you're chasing.",
+      "When I run these numbers I use local tools to convert both currencies and both rates in one pass - a few clicks in the browser instead of tab-hopping, and no data sent to third parties. FX figures are sensitive for a cross-border seller; calculate them locally.",
+      "Honest take: locking rates isn't for making money on the difference, it's for locking certainty. Treat it like insurance and your mindset is right. Memorize your cost rate, compare it before every settlement - that beats any forecast."
+    ],
     "title": "锁汇思路：结算前先算清汇率差",
     "date": "2026-09-04",
     "type": "tutorial",
@@ -181,6 +239,16 @@
   },
   {
     "slug": "size-report-audit",
+    "titleEn": "Monthly Asset-Size Audit: Slim Down Your Media Library",
+    "excerptEn": "Product images pile up; even after one round of compression, multi-MB files lie around eating space and slowing listings. Run a monthly size check on your assets, slim the bloat, and both page speed and back-office work get smoother.",
+    "bodyEn": [
+      "The longer you sell cross-border, the more your asset library becomes a disaster zone. The same product gets revised repeatedly, old images never get deleted, and high-res originals, compressed versions and every iteration sit together - a file at several MB is routine. When you finally need to upload or package, you're just waiting on it.",
+      "So I turned asset health checks into a monthly routine: one fixed day a month, pull a size report over the month's image folders and see which files are obviously oversized and which are duplicate big files. You don't know until you look - and looking always surfaces a few that should've been handled.",
+      "A report sorted by file size is the most useful: problems jump out at a glance. I focus on two classes: finished images over 1MB (they directly determine listing page load speed) and obvious near-duplicates (pure dead weight).",
+      "There's a method to slimming too. Don't compress everything into low-res - main images need to keep quality, and the result should pass the \"can't tell by eye\" test. Use the report to target specific files, then compress selectively. That's far more reliable than blasting everything, and you won't degrade the useful sharp images.",
+      "All of this I do locally: scanning images, compiling the report, batch processing - all in the browser, images never uploaded. Sourcing images and unlisted material are especially sensitive in this trade, and local processing is what keeps the images in your own hands.",
+      "Don't underestimate this half hour a month. Over time it saves real money: faster listings, faster pages, faster file-finding for the team, and a hard drive that isn't crammed with tens of GB of duplicate assets. Once it's a habit, the library stays clean."
+    ],
     "title": "素材体积月度体检：定期瘦身",
     "date": "2026-09-04",
     "type": "tutorial",
@@ -211,6 +279,22 @@
   },
   {
     "slug": "video-trim-blurry",
+    "keywords": [
+      "视频裁剪画质",
+      "视频裁剪发糊",
+      "输出分辨率",
+      "视频码率",
+      "H.264编码"
+    ],
+    "titleEn": "Video Blurry After Trimming? Check These Three Settings",
+    "excerptEn": "Trimmed video looks blurry? Don't blame the tool yet - check output resolution, bitrate and encoder first. Local trimming keeps files in the browser, zero leak of product material.",
+    "bodyEn": [
+      "In e-commerce video work, I've seen plenty of people complain that footage \"gets blurry after trimming.\" Most of the time the blur isn't the tool's fault - it's settings that got touched during the trim. Here are the three mistakes I've hit.",
+      "First: output resolution. If you're just cutting off the edges, resolution should stay identical. But many editors silently scale the output down, throwing away real detail. After trimming, check whether the output resolution matches the source.",
+      "Second: bitrate. If the tool defaults to a low bitrate after cutting, fast motion turns into color blocks and mush. Try raising the bitrate back to source level - 8-10 Mbps is usually stable for 1080p.",
+      "Third: encoder. Stick with H.264 + MP4 and don't convert to poorly compatible formats. Main product videos and detail-page videos are fine from 720p with H.264.",
+      "With a local video trimmer you work in the browser, editing the file itself - it never leaves your device. Unpublished sourcing samples and unreleased material with logos are safest trimmed locally; you even skip the upload step."
+    ],
     "title": "视频裁剪后画质发糊？三处参数排查",
     "date": "2026-09-05",
     "type": "tutorial",

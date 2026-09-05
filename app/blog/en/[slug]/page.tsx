@@ -1,10 +1,18 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { blogPosts, getPost } from '@/content/blog';
+import { blogPosts, getPost, CATEGORY_SLUGS, CATEGORY_EN } from '@/content/blog';
+import { TOOLS } from '@/lib/tools';
+import { TOOL_STRINGS } from '@/lib/toolStrings';
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
+}
+
+function toolTitleEn(slug: string, fallback: string): string {
+  const meta = TOOLS.find((t) => t.slug === slug);
+  if (meta && TOOL_STRINGS[meta.titleKey]?.en) return TOOL_STRINGS[meta.titleKey].en;
+  return fallback;
 }
 
 export async function generateMetadata({
@@ -16,10 +24,10 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: `${post.title} - CrossTool 博客`,
-    description: post.excerpt,
+    title: `${post.titleEn || post.title} - CrossTool Blog`,
+    description: post.excerptEn || post.excerpt,
     alternates: {
-      canonical: `/blog/${post.slug}`,
+      canonical: `/blog/en/${post.slug}`,
       languages: {
         'zh-CN': `/blog/${post.slug}`,
         en: `/blog/en/${post.slug}`,
@@ -29,7 +37,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogPostPage({
+export default async function BlogEnPostPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -38,14 +46,18 @@ export default async function BlogPostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
+  const title = post.titleEn || post.title;
+  const excerpt = post.excerptEn || post.excerpt;
+  const body = post.bodyEn || post.body;
+  const catSlug = Object.keys(CATEGORY_SLUGS).find((s) => CATEGORY_SLUGS[s] === post.category);
+
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: post.title,
+    headline: title,
     datePublished: post.date,
-    description: post.excerpt,
-    keywords: post.keywords ? post.keywords.join(', ') : undefined,
-    inLanguage: 'zh-CN',
+    description: excerpt,
+    inLanguage: 'en',
   };
 
   return (
@@ -55,41 +67,30 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <nav className="text-xs text-muted">
-        <Link href="/blog" className="hover:text-primary">
-          ← 返回博客
+        <Link href="/blog/en" className="hover:text-primary">
+          ← Back to blog
         </Link>
         <span className="mx-2">·</span>
-        <Link href={`/blog/en/${post.slug}`} className="hover:text-primary">
-          English Version →
+        <Link href={`/blog/${post.slug}`} className="hover:text-primary">
+          阅读中文版 →
         </Link>
       </nav>
       <article className="mt-4">
         <div className="flex items-center gap-2 text-xs text-muted">
-          <span className="rounded-full bg-panel px-2 py-0.5 font-semibold text-primary">{post.category}</span>
+          <span className="rounded-full bg-panel px-2 py-0.5 font-semibold text-primary">
+            {catSlug ? CATEGORY_EN[catSlug] || post.category : post.category}
+          </span>
           <time dateTime={post.date}>{post.date}</time>
         </div>
-        <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{post.title}</h1>
+        <h1 className="mt-3 text-2xl font-bold sm:text-3xl">{title}</h1>
         <div className="mt-6 space-y-4 text-[15px] leading-relaxed">
-          {post.body.map((para, i) => (
+          {body.map((para, i) => (
             <p key={i}>{para}</p>
           ))}
         </div>
-        {post.keywords && post.keywords.length > 0 && (
-          <div className="mt-6 flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold text-muted">关键词：</span>
-            {post.keywords.map((k) => (
-              <span
-                key={k}
-                className="rounded-full border border-border bg-panel px-2.5 py-1 text-xs text-muted"
-              >
-                #{k}
-              </span>
-            ))}
-          </div>
-        )}
         {post.relatedTools.length > 0 && (
           <section className="mt-10 rounded-card border border-border bg-panel p-5">
-            <h2 className="text-sm font-bold">相关本地工具（打开即用，零上传）</h2>
+            <h2 className="text-sm font-bold">Related local tools (zero upload)</h2>
             <ul className="mt-3 space-y-2">
               {post.relatedTools.map((t) => (
                 <li key={t.slug}>
@@ -97,7 +98,7 @@ export default async function BlogPostPage({
                     href={`/tools/${t.slug}`}
                     className="text-sm font-semibold text-primary hover:underline"
                   >
-                    {t.title} →
+                    {toolTitleEn(t.slug, t.title)} →
                   </Link>
                 </li>
               ))}

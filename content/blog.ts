@@ -17,6 +17,20 @@ export const CATEGORY_SLUGS: Record<string, string> = {
   sourcing: '选品数据',
 };
 
+// 分类英文显示（英文博客路由用）
+export const CATEGORY_EN: Record<string, string> = {
+  video: 'Video Marketing',
+  document: 'Document Processing',
+  image: 'Image Optimization',
+  finance: 'Cross-Border Finance',
+  listing: 'Listing Optimization',
+  security: 'Account Security',
+  media: 'Audio & Video',
+  operations: 'Operations Efficiency',
+  privacy: 'Privacy & Compliance',
+  sourcing: 'Sourcing Data',
+};
+
 export interface RelatedTool {
   slug: string;
   title: string;
@@ -31,12 +45,23 @@ export interface BlogPost {
   excerpt: string;
   body: string[]; // 段落数组
   keywords?: string[]; // SEO 关键词（how to / why 型选题，中文长尾优先）
+  // 英文版（中英双语博客）：缺省时英文路由回退显示中文文案
+  titleEn?: string;
+  excerptEn?: string;
+  bodyEn?: string[];
   relatedTools: RelatedTool[];
 }
 
 const seedPosts: BlogPost[] = [
   {
     slug: 'amazon-product-video-compress-guide',
+    titleEn: 'How to Compress Amazon Product Videos Without Losing Quality',
+    excerptEn: 'Product videos often fail to upload because of file-size limits. Compress in your browser with local tools - no upload, no risk to your sourcing privacy.',
+    bodyEn: [
+      'Amazon and TikTok Shop both set hidden file-size limits on product videos, and footage straight off your phone can be 100MB+. Videos that are too large are slow to load and often fail mid-upload. Shrinking your video to a platform-friendly size should be part of your pre-listing checklist.',
+      'The key is doing it locally. Product videos often contain unpublished sourcing shots, sample footage and behind-the-scenes clips - uploading them to a random online compressor leaks exactly what you want to keep private. With a browser-based ffmpeg tool the file never leaves your device.',
+      'Practical tip: 720p at medium quality is enough for most main product videos; switch to GIF separately for social media. When you\'re done, normalize to MP4 (H.264) for the widest compatibility.',
+    ],
     title: '亚马逊商品视频压缩实战：体积减半也不损画质',
     date: '2026-09-03',
     type: 'tutorial',
@@ -57,6 +82,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'merge-pdf-customs-invoice',
+    titleEn: 'How to Merge Customs Declarations and Invoices into One PDF',
+    excerptEn: 'Combine customs declarations, invoices and contracts into a single ordered PDF - done locally, nothing uploaded.',
+    bodyEn: [
+      'Around every shipment you handle a pile of documents: customs declarations, commercial invoices, packing lists, contracts. Scattered PDFs are a pain to send to buyers and a pain to archive. Merging them into one book in the right order keeps things manageable.',
+      'Merging happens entirely in the browser, so sensitive documents with customer details never touch a server. If the result is too large, compress it once more.',
+      'Need to send just one page? Split by page range first, then merge or convert to images.',
+    ],
     title: '报关单与发票 PDF 合并：跨境卖家一站式整理',
     date: '2026-09-03',
     type: 'tutorial',
@@ -76,6 +108,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'remove-bg-product-photo',
+    titleEn: 'How to Remove Background from Product Photos: Transparent PNG in 10 Seconds',
+    excerptEn: 'Cut out product photos to transparent PNGs in one click. The model runs locally in your browser - zero upload, perfect for main and white-background images.',
+    bodyEn: [
+      'Marketplace main images usually demand a white or transparent background, so background removal is the most common image pre-processing step you\'ll do. Processing locally keeps the original photo on your device - better privacy.',
+      'After removing the background you\'ll often want to compress or convert to a uniform size; watermarking and batch renaming can also be done locally in one pass.',
+      'Note: background removal is weaker on complex edges like hair and glass. Touch those up manually before listing when it matters.',
+    ],
     title: '产品图去背景：本地工具 10 秒出透明 PNG',
     date: '2026-09-03',
     type: 'tutorial',
@@ -95,6 +134,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'vat-calculator-cross-border',
+    titleEn: 'How to Use an EU VAT Calculator: Tax-Inclusive vs Tax-Exclusive Prices',
+    excerptEn: 'Work out tax-inclusive and tax-exclusive prices plus VAT amounts across major EU rates - all local, nothing uploaded.',
+    bodyEn: [
+      'Selling into the EU, VAT is the thing that trips everyone up: does the listed price include tax, and how do you actually calculate profit? A VAT calculator takes the rate and gives you the answer in one step, so you stop doing mental math.',
+      'VAT and import duty are different things: VAT is a consumption tax, while duty is estimated from HS code plus destination country. Calculate both locally so your data never leaves your device.',
+      'Pair it with a return-cost calculator to see the true net profit after returns - that\'s how you price safely.',
+    ],
     title: '欧盟 VAT 计算器怎么用：含/不含税一键算',
     date: '2026-09-03',
     type: 'tutorial',
@@ -114,6 +160,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'amazon-listing-title-optimizer',
+    titleEn: 'How to Optimize Listing Titles: Keyword Suggestions and Density Checks',
+    excerptEn: 'Get synonym and localized phrasing suggestions from a built-in word bank, then check keyword density against length limits - zero upload.',
+    bodyEn: [
+      'The title carries the most search weight of any field. Filling it with selling points without stuffing is a skill. A local title optimizer suggests synonyms and more localized phrasing, and flags keyword density.',
+      'Before you write, check the character limit (usually 200 for Amazon) against a character counter so your title doesn\'t get truncated.',
+      'Then run a sensitive-word check before listing to dodge platform-banned terms; the five-bullet descriptions can be batch-generated too.',
+    ],
     title: 'Listing 标题优化：本地词库提词 + 密度自检',
     date: '2026-09-03',
     type: 'tutorial',
@@ -134,6 +187,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'extract-audio-from-live',
+    titleEn: 'How to Extract Audio from Live Replays for Podcasts and Transcripts',
+    excerptEn: 'Pull the audio track from live streams and talking-head videos as MP3 for podcast material or transcript drafts - processed locally, never uploaded.',
+    bodyEn: [
+      'Live replays and talking-head videos are full of high-value content. Extracting the audio into a podcast, or transcribing it into a script draft, recycles your traffic into new assets.',
+      'Extraction just keeps the audio and drops the picture, so it\'s fast. Once you have the MP3, normalize the format if you plan to drop it into editing software.',
+      'It\'s fully local - the source video never leaves your device, protecting your raw material.',
+    ],
     title: '直播回放提取音频：做播客与字幕底稿',
     date: '2026-09-03',
     type: 'tutorial',
@@ -152,6 +212,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'images-to-pdf-catalog',
+    titleEn: 'How to Convert Product Photos to a PDF Catalog for Buyers',
+    excerptEn: 'Turn multiple product photos and manual pages into one PDF - great for sending to buyers, archiving, or attaching to customs. Zero upload.',
+    bodyEn: [
+      'Sending buyers a product brochure or a warehouse a manual, a single PDF looks more professional than a pile of loose images and uses less bandwidth. Images are combined in your chosen order, centered on A4.',
+      'With lots of images, batch-compress or normalize formats first so the final PDF stays a reasonable size.',
+      'Generated locally - the originals are never uploaded.',
+    ],
     title: '产品图批量转 PDF：发给买家的目录册',
     date: '2026-09-03',
     type: 'tutorial',
@@ -167,6 +234,13 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'jwt-decoder-shop-api',
+    titleEn: 'How to Decode Store API Tokens: Check JWT Expiry',
+    excerptEn: 'Decode the header and payload of your store API token, highlight the expiry time - done locally, never uploaded.',
+    bodyEn: [
+      'When you integrate a platform\'s open API, tokens are usually JWTs. Decoding the payload to read the expiry lets you pre-empt those sudden "401 unauthorized" failures.',
+      'JWT decoding is purely local, so the token never leaves your device. Pair it with a Base64 encoder/decoder when debugging callbacks and tracking links.',
+      'Tokens are sensitive credentials - don\'t leave decoded results lying around on shared machines.',
+    ],
     title: '店铺 API Token 解析：JWT 解码看过期时间',
     date: '2026-09-03',
     type: 'tutorial',
@@ -185,6 +259,16 @@ const seedPosts: BlogPost[] = [
   },
   {
     slug: 'why-keep-data-local-cross-border',
+    titleEn: 'Why Cross-Border Sellers Shouldn\'t Upload Data to Third-Party Tools',
+    excerptEn: 'Sourcing photos, quotes and customer data uploaded to a third-party tool hand your business secrets to strangers. Here\'s why cross-border sellers must insist on local, zero-upload processing.',
+    bodyEn: [
+      'Cross-border sellers lean on online tools every day: compressing images, converting PDFs, checking exchange rates, estimating duties. It\'s tempting to just upload, click, download. But the moment your data leaves your device it stops being yours.',
+      'Start with what hurts most: sourcing and quotes. Unlisted product photos, supplier quotes and cost breakdowns are the edge that keeps you alive in a category. Handing them to a no-name third-party site is handing your hand to a stranger. Caches, logs, screenshots, re-processing - none of it is under your control.',
+      'Then there\'s customer data and compliance. Names, addresses and phone numbers in orders are personal data; API payloads and raw buyer reviews can carry identifying details too. Once that flows into an overseas server it enters the reach of laws like GDPR and CCPA. When something goes wrong, "I didn\'t know" won\'t protect you.',
+      'Watch out for the business model behind "free" tools: free usually means ads, or it means your data. Your product images, copy and spreadsheets can end up training models, feeding competitor analysis, or sitting on a server that gets breached. Even a well-meaning site can lose everything you sent it in one breach.',
+      'This isn\'t a call to give up efficiency - it\'s a call to change how you get it. Keep the computation in the browser. Image compression, background removal, PDF encryption, EXIF cleanup, currency conversion - all of it runs locally, and the file never leaves your device. Same results, with the one difference that matters: the data stays in your hands.',
+      'Three rules to stand on: never upload when a local tool exists; use official portals where you must go through a platform; and before every upload ask, "If this data leaked, could I absorb it?" Cross-border trade is fundamentally an information-edge business. Keeping data local is the cheapest moat you\'ll ever build.',
+    ],
     title: '为什么跨境卖家的数据不该上传第三方工具：本地处理是底线',
     date: '2026-09-05',
     type: 'tutorial',

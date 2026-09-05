@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE + '/', changeFrequency: 'weekly', priority: 1 },
     { url: SITE + '/about', changeFrequency: 'monthly', priority: 0.6 },
     { url: SITE + '/blog', changeFrequency: 'daily', priority: 0.8 },
+    { url: SITE + '/blog/en', changeFrequency: 'daily', priority: 0.8 },
   ];
   for (const t of TOOLS) {
     if (t.soon) continue; // 未实现页面不进 sitemap，避免死链
@@ -16,9 +17,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
   for (const p of blogPosts) {
     urls.push({ url: SITE + '/blog/' + p.slug, changeFrequency: 'monthly', priority: 0.7 });
+      if (p.titleEn) urls.push({ url: SITE + '/blog/en/' + p.slug, changeFrequency: 'monthly', priority: 0.7 });
   }
   for (const slug of Object.keys(CATEGORY_SLUGS)) {
     urls.push({ url: SITE + '/blog/category/' + slug, changeFrequency: 'weekly', priority: 0.6 });
+      urls.push({ url: SITE + '/blog/en/category/' + slug, changeFrequency: 'weekly', priority: 0.6 });
   }
   return urls;
 }

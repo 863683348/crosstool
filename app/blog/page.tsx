@@ -19,6 +19,11 @@ export default function BlogListPage() {
   const categories = [...new Set(posts.map((p) => p.category))];
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-10">
+      <nav className="text-xs text-muted">
+        <Link href="/blog/en" className="hover:text-primary">
+          English Version →
+        </Link>
+      </nav>
       <h1 className="text-2xl font-bold sm:text-3xl">跨境电商工具实战博客</h1>
       <p className="mt-2 text-sm text-muted">
         每篇解决一个具体痛点，全部配合浏览器内本地工具（零上传）完成。
