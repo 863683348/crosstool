@@ -37,6 +37,7 @@ export default async function BlogPostPage({
     headline: post.title,
     datePublished: post.date,
     description: post.excerpt,
+    keywords: post.keywords ? post.keywords.join(', ') : undefined,
     inLanguage: 'zh-CN',
   };
 
@@ -62,6 +63,19 @@ export default async function BlogPostPage({
             <p key={i}>{para}</p>
           ))}
         </div>
+        {post.keywords && post.keywords.length > 0 && (
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold text-muted">关键词：</span>
+            {post.keywords.map((k) => (
+              <span
+                key={k}
+                className="rounded-full border border-border bg-panel px-2.5 py-1 text-xs text-muted"
+              >
+                #{k}
+              </span>
+            ))}
+          </div>
+        )}
         {post.relatedTools.length > 0 && (
           <section className="mt-10 rounded-card border border-border bg-panel p-5">
             <h2 className="text-sm font-bold">相关本地工具（打开即用，零上传）</h2>
