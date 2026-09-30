@@ -50,6 +50,8 @@ export interface BlogPost {
   excerptEn?: string;
   bodyEn?: string[];
   relatedTools: RelatedTool[];
+  // FAQ（结构化数据 + 可见问答）：q/a 为中文，qEn/aEn 为英文；缺省英文时回退中文
+  faq?: { q: string; a: string; qEn?: string; aEn?: string }[];
 }
 
 const seedPosts: BlogPost[] = [
@@ -78,6 +80,26 @@ const seedPosts: BlogPost[] = [
       { slug: 'video-compress', title: '视频压缩（本地）' },
       { slug: 'video-convert', title: '视频格式转换（本地）' },
       { slug: 'video-to-gif', title: '视频转 GIF（本地）' },
+    ],
+    faq: [
+      {
+        q: '商品主视频建议多大、什么格式？',
+        a: '建议 720p + 中档画质，统一转成 MP4（H.264）兼容性最好。体积更小，上传更快、失败更少。',
+        qEn: 'What size and format should Amazon product videos be?',
+        aEn: 'Keep main videos around 720p at medium quality and normalize to MP4 (H.264) for the widest compatibility. Smaller files upload faster and fail less.',
+      },
+      {
+        q: '在线压缩商品视频安全吗？',
+        a: '用浏览器本地工具压缩，文件不会离开你的设备——商品视频里常有未公开选品和样片，本地处理更私密。',
+        qEn: 'Is it safe to compress product videos online?',
+        aEn: 'Use a browser-based local tool so the file never leaves your device — important because product videos often contain unpublished sourcing and sample footage.',
+      },
+      {
+        q: 'Amazon 视频上传总失败怎么办？',
+        a: '多半是体积过大或格式不被支持。先压缩到平台友好区间，再转成 MP4 再上传。',
+        qEn: 'Why is my Amazon video upload failing?',
+        aEn: 'Usually the file is too large or the format is unsupported. Compress to a platform-friendly size and convert to MP4 before uploading.',
+      },
     ],
   },
   {
@@ -157,6 +179,26 @@ const seedPosts: BlogPost[] = [
       { slug: 'duty-estimator', title: '关税估算（本地）' },
       { slug: 'return-cost-calculator', title: '退货成本计算器（本地）' },
     ],
+    faq: [
+      {
+        q: '标价到底含不含 VAT？',
+        a: '看平台设置；VAT 计算器同时给出含税与不含税金额，方便你正确定价。',
+        qEn: 'Does the listed price include VAT?',
+        aEn: 'It depends on the marketplace; a VAT calculator shows both tax-inclusive and tax-exclusive amounts so you can price correctly.',
+      },
+      {
+        q: 'VAT 和进口关税是一回事吗？',
+        a: '不一样。VAT 是消费税；关税按 HS 编码与目的国估算。两者都建议本地算。',
+        qEn: 'Is VAT the same as import duty?',
+        aEn: 'No. VAT is a consumption tax; duty is estimated from the HS code and destination country. Calculate both locally.',
+      },
+      {
+        q: '做欧盟站怎么定价才稳？',
+        a: '把 VAT 计算器与退货成本计算器搭配用，能看到退回后的真实净利，定价更稳。',
+        qEn: 'How do I price safely for the EU?',
+        aEn: 'Pair the VAT calculator with a return-cost calculator to see the true net profit after returns.',
+      },
+    ],
   },
   {
     slug: 'amazon-listing-title-optimizer',
@@ -184,6 +226,26 @@ const seedPosts: BlogPost[] = [
       { slug: 'sensitive-word-check', title: '敏感词检查（本地）' },
       { slug: 'bullet-generator', title: '五点描述生成器（本地）' },
     ],
+    faq: [
+      {
+        q: 'Amazon 标题最长多少字符？',
+        a: '通常上限 200 字符；用字符计数器对照，避免被截断。',
+        qEn: 'How long can an Amazon title be?',
+        aEn: 'Usually up to 200 characters; use a character counter to avoid truncation.',
+      },
+      {
+        q: '怎么避免标题关键词堆砌？',
+        a: '用标题优化器给同义表达并做密度自检，标题保持可读。',
+        qEn: 'How do I avoid keyword stuffing?',
+        aEn: 'Use a title optimizer that suggests synonyms and checks keyword density so the title stays readable.',
+      },
+      {
+        q: '上架前要检查敏感词吗？',
+        a: '要。用敏感词检查扫一遍，避开平台违禁词。',
+        qEn: 'Should I check sensitive words before listing?',
+        aEn: 'Yes — run a sensitive-word check to dodge platform-banned terms.',
+      },
+    ],
   },
   {
     slug: 'extract-audio-from-live',
@@ -209,6 +271,26 @@ const seedPosts: BlogPost[] = [
       { slug: 'video-extract-audio', title: '视频提取音频（本地）' },
       { slug: 'audio-convert', title: '音频格式转换（本地）' },
     ],
+    faq: [
+      {
+        q: '可以不上传视频就提取音频吗？',
+        a: '可以。本地浏览器工具抽取音轨，源视频不上传任何地方。',
+        qEn: 'Can I extract audio without uploading the video?',
+        aEn: 'Yes — a local browser tool pulls the audio track without sending the source video anywhere.',
+      },
+      {
+        q: '音频导出成什么格式？',
+        a: 'MP3 是播客与字幕底稿最稳的默认格式；剪辑软件需要别的格式再转。',
+        qEn: 'What format should I export the audio in?',
+        aEn: 'MP3 is the safest default for podcasts and transcripts; convert afterward if your editor needs another format.',
+      },
+      {
+        q: '为什么要提取直播回放音频？',
+        a: '把高价值的口播内容二次利用成播客或字幕底稿。',
+        qEn: 'Why extract audio from live replays?',
+        aEn: 'It recycles high-value talking-head content into podcasts or transcript drafts.',
+      },
+    ],
   },
   {
     slug: 'images-to-pdf-catalog',
@@ -231,6 +313,26 @@ const seedPosts: BlogPost[] = [
       '本地生成，原图不上传。',
     ],
     relatedTools: [{ slug: 'images-to-pdf', title: '图片批量转 PDF（本地）' }],
+    faq: [
+      {
+        q: '怎么做产品目录 PDF？',
+        a: '按选择顺序把产品图与说明书页合成一本，A4 自动居中，导出为一个 PDF。',
+        qEn: 'How do I make a product catalog PDF?',
+        aEn: 'Combine product photos and manual pages in your chosen order; they are centered on A4 and exported as one PDF.',
+      },
+      {
+        q: 'PDF 太大怎么办？',
+        a: '图太多或分辨率太高。合并前先批量压缩或统一格式。',
+        qEn: 'Why is my PDF too large?',
+        aEn: 'Too many high-res images. Batch-compress or normalize formats before merging.',
+      },
+      {
+        q: 'PDF 是本地生成的吗？',
+        a: '是，本地生成，原图不上传。',
+        qEn: 'Is the PDF generated locally?',
+        aEn: 'Yes, the originals are never uploaded.',
+      },
+    ],
   },
   {
     slug: 'jwt-decoder-shop-api',

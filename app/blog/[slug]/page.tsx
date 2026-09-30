@@ -48,12 +48,34 @@ export default async function BlogPostPage({
     inLanguage: 'zh-CN',
   };
 
+  const faqs = (post.faq ?? []).map((f) => ({
+    q: f.q ?? f.qEn ?? '',
+    a: f.a ?? f.aEn ?? '',
+  }));
+  const faqJsonLd = faqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <nav className="text-xs text-muted">
         <Link href="/blog" className="hover:text-primary">
           ← 返回博客
@@ -102,6 +124,22 @@ export default async function BlogPostPage({
                 </li>
               ))}
             </ul>
+          </section>
+        )}
+        {faqs.length > 0 && (
+          <section className="mt-10">
+            <h2 className="text-lg font-bold">常见问题</h2>
+            <div className="mt-3 space-y-2">
+              {faqs.map((f) => (
+                <details
+                  key={f.q}
+                  className="rounded-card border border-border bg-panel p-4"
+                >
+                  <summary className="cursor-pointer font-semibold">{f.q}</summary>
+                  <p className="mt-2 text-sm text-muted">{f.a}</p>
+                </details>
+              ))}
+            </div>
           </section>
         )}
       </article>
