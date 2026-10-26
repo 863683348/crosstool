@@ -1,20 +1,6 @@
 {
+  "consumed": true,
   "slug": "jwt-header-algo",
-  "title": "JWT header 算法：安全性影响",
   "date": "2026-10-26",
-  "type": "tutorial",
-  "category": "账号安全",
-  "excerpt": "JWT 的 header 里写着用哪种算法签名，攻击者最爱盯这块。看懂 header 字段，你才不会在对接第三方登录时埋下越权漏洞。",
-  "body": [
-    "JWT 分三段，第一段 header 通常就两行：typ 和 alg。alg 写的是 HS256 还是 RS256，直接决定服务端怎么验签名，也决定攻击面在哪。",
-    "经典坑是 alg 写成 none，或前端能强行把 RS256 改成 HS256。服务端正巧用公钥当密钥去验 HS，攻击者就能拿公钥伪造 token，直接越权。",
-    "用 JWT 解码（本地）把 token 贴进去，第一段立刻展开成可读 JSON。先确认 alg 是你预期的值，再看 payload 里的 exp 有没有过期，五秒排查完。",
-    "我的做法是：服务端白名单写死允许的算法，绝不直接读客户端传来的 alg；密钥放环境变量不进代码。header 这种小字段，往往就是大漏洞的入口。"
-  ],
-  "relatedTools": [
-    {
-      "slug": "jwt-decoder",
-      "title": "JWT 解码（本地）"
-    }
-  ]
+  "slot": 2
 }
